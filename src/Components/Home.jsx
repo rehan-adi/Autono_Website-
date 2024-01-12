@@ -1,8 +1,9 @@
 import React from 'react'
+import { MdArrowForward } from "react-icons/md";
 
 function Home() {
   return (
-    <main className='h-[370vh] w-auto bg-black'> 
+    <main className='h-[810vh] w-auto bg-black'> 
     <div className='home-img flex justify-center items-start pt-36 w-auto h-[110vh]'>
          <div className='flex flex-col justify-center items-center'>
              <h1 className='text-7xl text-center home-line font-normal'>THE FUTURE OF <br />MOBILITY IS HERE</h1>
@@ -48,7 +49,7 @@ function Home() {
              <div className='pt-32 ml-44'>
                  <h1 className='text-4xl home-line2'>REAL-TIME <br /> INFORMATION</h1>
                  <p className='home-line2 mt-6 tracking-widest'>I'm a paragraph. Click here to add your <br /> own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</p>
-                 <button className='bg-transparent border hover:bg-black hover:text-white duration-500  border-gray-600 px-6 py-1 mt-7 text-black rounded-lg'>Read More</button>
+                 <button className='bg-transparent border hover:bg-black hover:text-white duration-500 px-6 py-1 mt-7 text-black border-r border-black rounded-lg'>Read More <span><MdArrowForward className='inline-block text-lg' /></span></button>
              </div>
              </div>
         </div>
@@ -57,7 +58,7 @@ function Home() {
           <div className='pt-32 mr-44'>
                  <h1 className='text-4xl home-line2'>PERCEPTION <br /> ENABLED</h1>
                  <p className='home-line2 mt-6 tracking-widest'>I'm a paragraph. Click here to add your <br /> own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</p>
-                 <button className='bg-transparent border hover:bg-black hover:text-white duration-500  border-gray-600 px-6 py-1 mt-7 text-black rounded-lg'>Read More</button>
+                 <button className='bg-transparent border hover:bg-black hover:text-white duration-500 px-6 py-1 mt-7 text-black border-r border-black rounded-lg'>Read More <span><MdArrowForward className='inline-block text-lg' /></span></button>
              </div>
           <div className="max-w-full">
           <img className="max-w-full h-auto" src="https://static.wixstatic.com/media/c837a6_305ff8a7722a479ab58f1d4f2729586e~mv2.jpg/v1/fill/w_950,h_850,al_l,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_305ff8a7722a479ab58f1d4f2729586e~mv2.jpg" alt="img" width={700} />
@@ -74,7 +75,7 @@ function Home() {
                  <h1 className='mb-10 text-base tracking-widest'>WHY AUTONO</h1>
                  <h2 className='home-line1 mb-10 text-2xl tracking-widest'>A different approach, <br /> using a new method of <br /> manufacturing.</h2>
                  <p className='home-line2 tracking-widest'>I'm a paragraph. Click here to add your <br /> own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</p>
-                 <button className='bg-black hover:bg-white hover:text-black duration-500 px-6 py-2 border mt-8 text-white rounded-lg'>Read More</button>
+                 <button className='bg-transparent hover:bg-white hover:text-black duration-500 px-6 py-1 mt-7 text-white border border-white rounded-lg'>Read More <span><MdArrowForward className='inline-block text-lg' /></span></button>
              </div>
              </div>
               </div>
