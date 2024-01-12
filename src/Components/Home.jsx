@@ -52,7 +52,7 @@ function Home() {
              </div>
              </div>
         </div>
-        <div className='flex items-center h-screen justify-center bg-white text-black'>
+        <div className='flex items-center h-screen pb-[85px] justify-center bg-white text-black'>
           <div className='flex'>
           <div className='pt-32 mr-44'>
                  <h1 className='text-4xl home-line2'>PERCEPTION <br /> ENABLED</h1>
@@ -65,7 +65,7 @@ function Home() {
              </div>
         </div>
         <div className='lawra-img w-auto flex justify-start  items-center h-[110vh]'>
-              <div className='bg-black w-[30vw] text-white flex justify-center items-center rounded-xl ml-20 h-[80vh]'>
+              <div className='bg-black w-[32vw] text-white flex justify-center items-center rounded-xl ml-36 h-[85vh]'>
               <div className='flex '>
              <div className='border-l border-white opacity-60 pr-10'>
                 
@@ -74,6 +74,7 @@ function Home() {
                  <h1 className='mb-10 text-base tracking-widest'>WHY AUTONO</h1>
                  <h2 className='home-line1 mb-10 text-2xl tracking-widest'>A different approach, <br /> using a new method of <br /> manufacturing.</h2>
                  <p className='home-line2 tracking-widest'>I'm a paragraph. Click here to add your <br /> own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</p>
+                 <button className='bg-black hover:bg-white hover:text-black duration-500 px-6 py-2 border mt-8 text-white rounded-lg'>Read More</button>
              </div>
              </div>
               </div>
