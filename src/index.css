@@ -24,3 +24,10 @@
 .home-line2{
     line-height: 1.6;
 }
+.lawra-img{
+    background-image: url(https://ca-times.brightspotcdn.com/dims4/default/5a14459/2147483647/strip/false/crop/2048x1368+0+0/resize/1486x993!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F1b%2Fd6%2Fe835ea6c9cf02553d94a0699bb35%2Fla-la-fi-adv-tesla-motors-photoshoot0019-jpg-20150213);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
