@@ -1,7 +1,55 @@
 import React from 'react'
 import { MdArrowForward } from "react-icons/md";
+import  {useEffect} from 'react'
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 function Home() {
+
+   const controls1 = useAnimation();
+   const controls2 = useAnimation();
+   const controls3 = useAnimation();
+   const controls4 = useAnimation();
+ 
+   const [ref, inView] = useInView({
+     triggerOnce: true,
+     rootMargin: '50px -50px',
+   });
+ 
+   useEffect(() => {
+     if (inView) {
+       controls1.start({ x: 0, opacity: 1, transition: { duration: 1, delay: 0.3 } });
+       controls2.start({ x: 0, opacity: 1, transition: { duration: 1.1, delay: 0.6} });
+       controls3.start({ x: 0, opacity: 1, transition: { duration: 1.1, delay: 0.9} });
+       controls4.start({ x: 0, opacity: 1, transition: { duration: 1.1, delay: 0.7} });
+     }
+   }, [inView, controls1, controls2, controls3, controls4]);
+
+
+   //////
+
+   const animation1 = useAnimation();
+   const animation2 = useAnimation();
+   const animation3 = useAnimation();
+   const animation4 = useAnimation();
+ 
+   const [ref1, inView1] = useInView({
+     triggerOnce: true,
+     rootMargin: '50px -50px',
+   });
+ 
+   useEffect(() => {
+     if (inView1) {
+      animation1.start({ x: 0, opacity: 1, transition: { duration: 1, } });
+      animation2.start({ x: 0, opacity: 1, transition: { duration: 1.1, delay: 0.2} });
+      animation3.start({ x: 0, opacity: 1, transition: { duration: 1.1, delay: 0.5} });
+      animation4.start({ x: 0, opacity: 1, transition: { duration: 1.1, delay: 0.7} });
+     }
+   }, [inView1, animation1, animation2, animation3, animation4]);
+
+
+
+
   return (
     <main className='h-[810vh] w-auto bg-black'> 
     <div className='home-img flex justify-center items-start pt-36 w-auto h-[110vh]'>
@@ -16,13 +64,29 @@ function Home() {
                 
              </div>
              <div>
-                 <h1 className='mb-10 text-base tracking-widest'>VISION</h1>
-                 <h2 className='home-line1 mb-10 text-2xl tracking-widest'>We’re Changing the <br /> Way the World Thinks <br /> About Cars</h2>
-                 <p className='home-line2 tracking-widest'>I'm a paragraph. Click here to add your <br /> own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</p>
+                 <motion.h1
+                  initial={{opacity: 0, x : -35}}
+                  animate={controls1}
+                  ref={ref} 
+                 className='mb-10 text-base tracking-widest'>VISION</motion.h1>
+                 <motion.h2
+                  initial={{opacity: 0, x : -35}}
+                  animate={controls2}
+                  ref={ref}  
+                 className='home-line1 mb-10 text-2xl tracking-widest'>We’re Changing the <br /> Way the World Thinks <br /> About Cars</motion.h2>
+                 <motion.p
+                  initial={{opacity: 0, x : -35}}
+                  animate={controls3}
+                  ref={ref}  
+                 className='home-line2 tracking-widest'>I'm a paragraph. Click here to add your <br /> own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</motion.p>
              </div>
              </div>
              <div className="max-w-full  text-center">
-          <img className="max-w-full h-auto" src="https://static.wixstatic.com/media/c837a6_ea5eeb99f72d42b0a22f459e01bfd33c~mv2.jpg/v1/fill/w_617,h_840,al_l,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_ea5eeb99f72d42b0a22f459e01bfd33c~mv2.jpg" alt="" width={480} />
+          <motion.img
+           initial={{opacity: 0, x : 155}}
+           animate={controls4}
+           ref={ref}   
+          className="max-w-full h-auto" src="https://static.wixstatic.com/media/c837a6_ea5eeb99f72d42b0a22f459e01bfd33c~mv2.jpg/v1/fill/w_617,h_840,al_l,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_ea5eeb99f72d42b0a22f459e01bfd33c~mv2.jpg" alt="" width={480} />
         </div>
         </div>
         <div className='flex items-center h-screen justify-between px-36 bg-white text-black'>
@@ -31,10 +95,26 @@ function Home() {
                 
              </div>
              <div>
-                 <h1 className='uppercase mb-10 tracking-widest text-base'>SERVICES</h1>
-                 <h2 className='home-line1 mb-10 text-2xl tracking-widest'>We Deliver Exceptional <br /> Products and Services <br /> Around the World</h2>
-                 <h1 className='text-4xl home-line2'>AUTONOMOUS <br />DRIVING</h1>
-                 <p className='home-line2 mt-6 tracking-widest'>I'm a paragraph. Click here to add your <br /> own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</p>
+                 <motion.h1
+                  initial={{opacity: 0, x : -35}}
+                  animate={animation1}
+                  ref={ref1} 
+                 className='uppercase mb-10 tracking-widest text-base'>SERVICES</motion.h1>
+                 <motion.h2
+                  initial={{opacity: 0, x : -35}}
+                  animate={animation2}
+                  ref={ref1}   
+                 className='home-line1 mb-10 text-2xl tracking-widest'>We Deliver Exceptional <br /> Products and Services <br /> Around the World</motion.h2>
+                 <motion.h1
+                  initial={{opacity: 0, x : -35}}
+                  animate={animation3}
+                  ref={ref1}  
+                 className='text-4xl home-line2'>AUTONOMOUS <br />DRIVING</motion.h1>
+                 <motion.p
+                  initial={{opacity: 0, x : -35}}
+                  animate={animation4}
+                  ref={ref1} 
+                 className='home-line2 mt-6 tracking-widest'>I'm a paragraph. Click here to add your <br /> own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</motion.p>
              </div>
              </div>
              <div className="max-w-full text-center">
