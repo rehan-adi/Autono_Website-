@@ -14,9 +14,11 @@ function Navbar() {
                    <li className='relative group'>
                      <span className='group-hover:underline cursor-pointer underline-offset-[6px] group-hover:mt-1'>About</span>
                    </li>
+                   <Link to="/Careers">
                    <li className='relative group'>
                      <span className='group-hover:underline cursor-pointer underline-offset-[6px] group-hover:mt-1'>Careers</span>
                    </li>
+                   </Link>
                    <li className='bg-black px-6 py-1 text-white rounded-lg'>Subscribe</li>
                 </ul>
          </div>
