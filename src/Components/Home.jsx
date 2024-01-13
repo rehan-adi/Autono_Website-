@@ -1,7 +1,7 @@
 import React from 'react'
 import { MdArrowForward } from "react-icons/md";
 import  {useEffect} from 'react'
-import { motion, useAnimation } from 'framer-motion';
+import { easeIn, motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 function Home() {
@@ -21,12 +21,12 @@ function Home() {
        controls1.start({ x: 0, opacity: 1, transition: { duration: 1, delay: 0.3 } });
        controls2.start({ x: 0, opacity: 1, transition: { duration: 1.1, delay: 0.6} });
        controls3.start({ x: 0, opacity: 1, transition: { duration: 1.1, delay: 0.9} });
-       controls4.start({ x: 0, opacity: 1, transition: { duration: 1.1, delay: 0.7} });
+       controls4.start({ x: 0, opacity: 1, transition: { duration: 1.5, delay: 0.7} });
      }
    }, [inView, controls1, controls2, controls3, controls4]);
 
 
-   //////
+   ////// Second Animation
 
    const animation1 = useAnimation();
    const animation2 = useAnimation();
@@ -46,6 +46,69 @@ function Home() {
       animation4.start({ x: 0, opacity: 1, transition: { duration: 1.1, delay: 0.7} });
      }
    }, [inView1, animation1, animation2, animation3, animation4]);
+
+
+   //// Third Animation 
+
+   const framer1 = useAnimation();
+   const framer2 = useAnimation();
+   const framer3 = useAnimation();
+ 
+   const [ref2, inView2] = useInView({
+     triggerOnce: true,
+     rootMargin: '50px -50px',
+   });
+ 
+   useEffect(() => {
+     if (inView2) {
+      framer1.start({ x: 0, opacity: 1, transition: { duration: 1, } });
+      framer2.start({ x: 0, opacity: 1, transition: { duration: 1.1, delay: 0.2} });
+      framer3.start({ x: 0, opacity: 1, transition: { duration: 1.1, delay: 0.5, transition: easeIn} });
+     }
+   }, [inView2, framer1, framer2, framer3]);
+
+
+   //////Fourth Animation 
+
+
+   const chaleya1 = useAnimation();
+   const chaleya2 = useAnimation();
+   const chaleya3 = useAnimation();
+ 
+   const [ref3, inView3] = useInView({
+     triggerOnce: true,
+     rootMargin: '50px -50px',
+   });
+ 
+   useEffect(() => {
+     if (inView3) {
+      chaleya1.start({ x: 0, opacity: 1, transition: { duration: 1, } });
+      chaleya2.start({ x: 0, opacity: 1, transition: { duration: 1.1, delay: 0.2} });
+      chaleya3.start({ x: 0, opacity: 1, transition: { duration: 1.1, delay: 0.5, transition: easeIn} });
+     }
+   }, [inView3, chaleya1, chaleya2, chaleya3]);
+
+
+   ////// Fifth animation 
+
+
+   const Weekend1 = useAnimation();
+   const Weekend2 = useAnimation();
+   const Weekend3 = useAnimation();
+ 
+   const [ref4, inView4] = useInView({
+     triggerOnce: true,
+     rootMargin: '50px -50px',
+   });
+ 
+   useEffect(() => {
+     if (inView4) {
+      Weekend1.start({ x: 0, opacity: 1, transition: { duration: 1, } });
+      Weekend2.start({ x: 0, opacity: 1, transition: { duration: 1.1, delay: 0.2} });
+      Weekend3.start({ x: 0, opacity: 1, transition: { duration: 1.1, delay: 0.5} });
+     }
+   }, [inView4, Weekend1, Weekend2, Weekend3]);
+
 
 
 
@@ -127,18 +190,42 @@ function Home() {
           <img className="max-w-full h-auto" src="https://static.wixstatic.com/media/84770f_abca8ce0bac24971a57d1f9d40b8238b~mv2.jpg/v1/fill/w_950,h_850,al_r,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_abca8ce0bac24971a57d1f9d40b8238b~mv2.jpg" alt="img" width={700} />
         </div>
              <div className='pt-32 ml-44'>
-                 <h1 className='text-4xl home-line2'>REAL-TIME <br /> INFORMATION</h1>
-                 <p className='home-line2 mt-6 tracking-widest'>I'm a paragraph. Click here to add your <br /> own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</p>
-                 <button className='bg-transparent border hover:bg-black hover:text-white duration-500 px-6 py-1 mt-7 text-black border-r border-black rounded-lg'>Read More <span><MdArrowForward className='inline-block text-lg' /></span></button>
+                 <motion.h1
+                  initial={{opacity: 0, x : 75}}
+                  animate={framer1}
+                  ref={ref2}  
+                 className='text-4xl home-line2'>REAL-TIME <br /> INFORMATION</motion.h1>
+                 <motion.p
+                  initial={{opacity: 0, x : 75}}
+                  animate={framer2}
+                  ref={ref2}   
+                 className='home-line2 mt-6 tracking-widest'>I'm a paragraph. Click here to add your <br /> own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</motion.p>
+                 <motion.button
+                  initial={{opacity: 0, x : 75}}
+                  animate={framer3}
+                  ref={ref2}   
+                 className='bg-transparent border hover:bg-black hover:text-white duration-500 px-6 py-1 mt-7 text-black border-r border-black rounded-lg'>Read More <span><MdArrowForward className='inline-block text-lg' /></span></motion.button>
              </div>
              </div>
         </div>
         <div className='flex items-center h-screen pb-[85px] justify-center bg-white text-black'>
           <div className='flex'>
           <div className='pt-32 mr-44'>
-                 <h1 className='text-4xl home-line2'>PERCEPTION <br /> ENABLED</h1>
-                 <p className='home-line2 mt-6 tracking-widest'>I'm a paragraph. Click here to add your <br /> own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</p>
-                 <button className='bg-transparent border hover:bg-black hover:text-white duration-500 px-6 py-1 mt-7 text-black border-r border-black rounded-lg'>Read More <span><MdArrowForward className='inline-block text-lg' /></span></button>
+                 <motion.h1
+                  initial={{opacity: 0, x : -35}}
+                  animate={chaleya1}
+                  ref={ref3}  
+                 className='text-4xl home-line2'>PERCEPTION <br /> ENABLED</motion.h1>
+                 <motion.p
+                  initial={{opacity: 0, x : -35}}
+                  animate={chaleya2}
+                  ref={ref3}   
+                 className='home-line2 mt-6 tracking-widest'>I'm a paragraph. Click here to add your <br /> own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</motion.p>
+                 <motion.button
+                  initial={{opacity: 0, x : -35}}
+                  animate={chaleya3}
+                  ref={ref3}   
+                 className='bg-transparent border hover:bg-black hover:text-white duration-500 px-6 py-1 mt-7 text-black border-r border-black rounded-lg'>Read More <span><MdArrowForward className='inline-block text-lg' /></span></motion.button>
              </div>
           <div className="max-w-full">
           <img className="max-w-full h-auto" src="https://static.wixstatic.com/media/c837a6_305ff8a7722a479ab58f1d4f2729586e~mv2.jpg/v1/fill/w_950,h_850,al_l,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_305ff8a7722a479ab58f1d4f2729586e~mv2.jpg" alt="img" width={700} />
@@ -152,9 +239,21 @@ function Home() {
                 
              </div>
              <div>
-                 <h1 className='mb-10 text-base tracking-widest'>WHY AUTONO</h1>
-                 <h2 className='home-line1 mb-10 text-2xl tracking-widest'>A different approach, <br /> using a new method of <br /> manufacturing.</h2>
-                 <p className='home-line2 tracking-widest'>I'm a paragraph. Click here to add your <br /> own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</p>
+                 <motion.h1
+                   initial={{opacity: 0, x : -35}}
+                   animate={Weekend1}
+                   ref={ref4}   
+                 className='mb-10 text-base tracking-widest'>WHY AUTONO</motion.h1>
+                 <motion.h2
+                  initial={{opacity: 0, x : -35}}
+                  animate={Weekend2}
+                  ref={ref4}    
+                 className='home-line1 mb-10 text-2xl tracking-widest'>A different approach, <br /> using a new method of <br /> manufacturing.</motion.h2>
+                 <motion.p
+                  initial={{opacity: 0, x : -35}}
+                  animate={Weekend3}
+                  ref={ref4}    
+                 className='home-line2 tracking-widest'>I'm a paragraph. Click here to add your <br /> own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</motion.p>
                  <button className='bg-transparent hover:bg-white hover:text-black duration-500 px-6 py-1 mt-7 text-white border border-white rounded-lg'>Read More <span><MdArrowForward className='inline-block text-lg' /></span></button>
              </div>
              </div>
