@@ -1,6 +1,58 @@
 import React from 'react'
+import  {useEffect} from 'react'
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 function Technology() {
+
+  const controls1 = useAnimation();
+  const controls2 = useAnimation();
+  const controls3 = useAnimation();
+
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    rootMargin: '50px -50px',
+  });
+
+  useEffect(() => {
+    if (inView) {
+      controls1.start({ x: 0, opacity: 1, transition: { duration: 1, delay: 0.3 } });
+      controls2.start({ x: 0, opacity: 1, transition: { duration: 1.1, delay: 0.6} });
+      controls3.start({ x: 0, scale: 1, opacity: 1, transition: { duration: 1.6, delay: 0.9} });
+    }
+  }, [inView, controls1, controls2, controls3]);
+
+  ///// Second Animation 
+
+
+  const Poplar1 = useAnimation();
+  const Poplar2 = useAnimation();
+  const Poplar3 = useAnimation();
+  const Poplar4 = useAnimation();
+  const Poplar5 = useAnimation();
+  const Poplar6 = useAnimation();
+  const Poplar7 = useAnimation();
+
+  const [ref1, inView1] = useInView({
+    triggerOnce: true,
+    rootMargin: '50px -50px',
+  });
+
+  useEffect(() => {
+    if (inView1) {
+      Poplar1.start({ x: 0, opacity: 1, transition: { duration: 1, delay: 0.3 } });
+      Poplar2.start({ x: 0, opacity: 1, transition: { duration: 1.1, delay: 0.6} });
+      Poplar3.start({ x: 0, scale: 1, opacity: 1, transition: { duration: 1.6, delay: 0.9} });
+
+      Poplar4.start({ x: 0, opacity: 1, transition: { duration: 1.6, delay: 1.1} });
+      Poplar5.start({ x: 0, opacity: 1, transition: { duration: 1.6, delay: 1.4} });
+      Poplar6.start({ x: 0, opacity: 1, transition: { duration: 1.6, delay: 1.9} });
+      Poplar7.start({ x: 0, opacity: 1, transition: { duration: 1.6, delay: 2.2} });
+    }
+  }, [inView1, Poplar1, Poplar2, Poplar3, Poplar4, Poplar5, Poplar6, Poplar7]);
+
+
+
   return (
     <div className='h-[420vh] w-auto'>
           <div className='h-[170vh] flex justify-center items-center relative w-auto '>
@@ -10,7 +62,6 @@ function Technology() {
           </div>
 
 
-
           <div>
           <div className='flex items-center h-screen bg-black justify-between px-36 text-white'>
           <div className='flex '>
@@ -18,12 +69,24 @@ function Technology() {
                 
              </div>
              <div className=''>
-                 <h1 className='mb-10 text-base tracking-widest'>THE AUTONO CAR</h1>
-                 <p className='home-line1 text-2xl tracking-widest'>Using groundbreaking <br /> perception-enabled sensor <br /> technology, the Autono car <br /> is a fully driverless vehicle <br /> engineered to the highest <br /> degree of precision and <br /> safety. It’s autonomous <br /> driving reimagined.</p>
+                 <motion.h1
+                   initial={{opacity: 0, x : -35}}
+                   animate={controls1}
+                   ref={ref} 
+                 className='mb-10 text-base tracking-widest'>THE AUTONO CAR</motion.h1>
+                 <motion.p
+                   initial={{opacity: 0, x : -35}}
+                   animate={controls2}
+                   ref={ref}  
+                 className='home-line1 text-2xl tracking-widest'>Using groundbreaking <br /> perception-enabled sensor <br /> technology, the Autono car <br /> is a fully driverless vehicle <br /> engineered to the highest <br /> degree of precision and <br /> safety. It’s autonomous <br /> driving reimagined.</motion.p>
              </div>
              </div>
              <div className="max-w-full">
-          <img className="max-w-full h-auto" src="https://static.wixstatic.com/media/84770f_b25d65793a3844d693462c8c8bdcdda3~mv2.jpg/v1/fill/w_950,h_1050,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_b25d65793a3844d693462c8c8bdcdda3~mv2.jpg" alt="" width={600} />
+          <motion.img
+          initial={{opacity: 0, scale: 0}}
+          animate={controls3}
+          ref={ref}   
+          className="max-w-full h-auto" src="https://static.wixstatic.com/media/84770f_b25d65793a3844d693462c8c8bdcdda3~mv2.jpg/v1/fill/w_950,h_1050,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_b25d65793a3844d693462c8c8bdcdda3~mv2.jpg" alt="" width={600} />
         </div>
         </div>
           </div>
@@ -36,8 +99,16 @@ function Technology() {
                 
              </div>
              <div className=''>
-                 <h1 className='mb-10 text-base tracking-widest'>THE AUTONO DIGITAL PRODUCTS</h1>
-                 <p className='home-line1 text-2xl tracking-widest'>We’ve developed an app <br /> so that each vehicle can <br /> drive autonomously and <br /> make decisions based on <br /> real-time information and <br /> situational awareness.</p>
+                 <motion.h1
+                  initial={{opacity: 0, x : -35}}
+                  animate={Poplar1}
+                  ref={ref1}  
+                 className='mb-10 text-base tracking-widest'>THE AUTONO DIGITAL PRODUCTS</motion.h1>
+                 <motion.p
+                   initial={{opacity: 0, x : -35}}
+                   animate={Poplar2}
+                   ref={ref1}   
+                 className='home-line1 text-2xl tracking-widest'>We’ve developed an app <br /> so that each vehicle can <br /> drive autonomously and <br /> make decisions based on <br /> real-time information and <br /> situational awareness.</motion.p>
              </div>
              </div>
              <div className="max-w-full">
@@ -46,12 +117,28 @@ function Technology() {
         </div>
         <div className='flex gap-72 justify-around'> 
         <div>
-            <h1 className=' text-lg tracking-widest'>ADVANCED CYBER SECURITY</h1>
-             <p className=' home-line1 mt-6 tracking-widest'>I'm a paragraph. Click here to add your <br />own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</p>
+            <motion.h1
+              initial={{opacity: 0, x : -35}}
+              animate={Poplar4}
+              ref={ref1}   
+            className=' text-lg tracking-widest'>ADVANCED CYBER SECURITY</motion.h1>
+             <motion.p
+              initial={{opacity: 0, x : -35}}
+              animate={Poplar5}
+              ref={ref1} 
+             className=' home-line1 mt-6 tracking-widest'>I'm a paragraph. Click here to add your <br />own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</motion.p>
          </div>
         <div>
-            <h1  className=' text-lg tracking-widest'>REAL-TIME INFORMATION</h1>
-             <p className=' home-line1 mt-6 tracking-widest'>I'm a paragraph. Click here to add your <br />own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</p>
+            <motion.h1
+              initial={{opacity: 0, x : -35}}
+              animate={Poplar6}
+              ref={ref1}  
+            className=' text-lg tracking-widest'>REAL-TIME INFORMATION</motion.h1>
+             <motion.p
+              initial={{opacity: 0, x : -35}}
+              animate={Poplar7}
+              ref={ref1}   
+             className=' home-line1 mt-6 tracking-widest'>I'm a paragraph. Click here to add your <br />own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</motion.p>
          </div>
         </div>
         </div>
