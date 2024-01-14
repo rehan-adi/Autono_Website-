@@ -1,7 +1,7 @@
 import React from 'react'
 import { MdArrowForward } from "react-icons/md";
 import  {useEffect} from 'react'
-import { easeIn, motion, useAnimation } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 function Home() {
@@ -63,7 +63,7 @@ function Home() {
      if (inView2) {
       framer1.start({ x: 0, opacity: 1, transition: { duration: 1, } });
       framer2.start({ x: 0, opacity: 1, transition: { duration: 1.1, delay: 0.2} });
-      framer3.start({ x: 0, opacity: 1, transition: { duration: 1.1, delay: 0.5, transition: easeIn} });
+      framer3.start({ x: 0, opacity: 1, transition: { duration: 1.1, delay: 0.5} });
      }
    }, [inView2, framer1, framer2, framer3]);
 
@@ -84,7 +84,7 @@ function Home() {
      if (inView3) {
       chaleya1.start({ x: 0, opacity: 1, transition: { duration: 1, } });
       chaleya2.start({ x: 0, opacity: 1, transition: { duration: 1.1, delay: 0.2} });
-      chaleya3.start({ x: 0, opacity: 1, transition: { duration: 1.1, delay: 0.5, transition: easeIn} });
+      chaleya3.start({ x: 0, opacity: 1, transition: { duration: 1.1, delay: 0.5} });
      }
    }, [inView3, chaleya1, chaleya2, chaleya3]);
 
@@ -108,6 +108,60 @@ function Home() {
       Weekend3.start({ x: 0, opacity: 1, transition: { duration: 1.1, delay: 0.5} });
      }
    }, [inView4, Weekend1, Weekend2, Weekend3]);
+
+
+
+   ///// sixth animation 
+
+
+
+   const Starboy1 = useAnimation();
+   const Starboy2 = useAnimation();
+   const Starboy3 = useAnimation();
+ 
+   const [ref5, inView5] = useInView({
+     triggerOnce: true,
+     rootMargin: '50px -50px',
+   });
+ 
+   useEffect(() => {
+     if (inView5) {
+      Starboy1.start({ x: 0, opacity: 1, transition: { duration: 1, delay: 0.1} });
+      Starboy2.start({ x: 0, opacity: 1, transition: { duration: 1.1, delay: 0.5} });
+      Starboy3.start({ x: 0, opacity: 1, transition: { duration: 1.1, delay: 0.9} });
+     }
+   }, [inView5, Starboy1, Starboy2, Starboy3]);
+
+
+   //// 7th Aniamtion 
+
+
+
+   const Reminder1 = useAnimation();
+   const Reminder2 = useAnimation();
+   const Reminder3 = useAnimation();
+   const Reminder4 = useAnimation();
+   const Reminder5 = useAnimation();
+   const Reminder6 = useAnimation();
+   const Reminder7 = useAnimation();
+ 
+   const [ref6, inView6] = useInView({
+     triggerOnce: true,
+     rootMargin: '50px -50px',
+   });
+ 
+   useEffect(() => {
+     if (inView6) {
+      Reminder1.start({ x: 0, opacity: 1, transition: { duration: 1, delay: 0.1} });
+      Reminder2.start({ x: 0, opacity: 1, transition: { duration: 1.1, delay: 0.5} });
+      Reminder3.start({ x: 0, opacity: 1, transition: { duration: 1.1, delay: 0.9} });
+
+      Reminder4.start({ opacity: 1, transition: { duration: 4.5, delay: 1} });
+      Reminder5.start({ opacity: 1, transition: { duration: 4.5, delay: 1.8} });
+      Reminder6.start({ opacity: 1, transition: { duration: 4.5, delay: 2.6} });
+      Reminder7.start({ opacity: 1, transition: { duration: 4.5, delay: 3.4} });
+     }
+   }, [inView6, Reminder1, Reminder2, Reminder3, Reminder4, Reminder5, Reminder6, Reminder6]);
 
 
 
@@ -265,38 +319,74 @@ function Home() {
                 </div>
                 <div className='flex items-center justify-center'>
                 <div className='ml-40'>
-                   <h1 className='text-3xl tracking-wider home-line2'>Autono In Numbers</h1>
+                   <motion.h1
+                     initial={{opacity: 0, x : 45}}
+                     animate={Starboy1}
+                     ref={ref5}    
+                   className='text-3xl tracking-wider home-line2'>Autono In Numbers</motion.h1>
                    <div className='mt-16'>
-                      <h1 className='text-4xl font-normal'>200</h1>
+                      <motion.h1
+                       initial={{opacity: 0, x : 35}}
+                       animate={Starboy2}
+                       ref={ref5}     
+                      className='text-4xl font-normal'>200</motion.h1>
                       <div className='border-t mt-5 w-44 border-black opacity-70'>
 
                       </div>
-                      <h4 className='mt-4 tracking-widest'>EMPLOYEES</h4>
+                      <motion.h4
+                        initial={{opacity: 0, x : 35}}
+                        animate={Starboy2}
+                        ref={ref5}   
+                      className='mt-4 tracking-widest'>EMPLOYEES</motion.h4>
                    </div>
                    <div className='mt-20'>
-                      <h1 className='text-4xl font-normal'>200M$</h1>
+                      <motion.h1
+                       initial={{opacity: 0, x : 35}}
+                       animate={Starboy3}
+                       ref={ref5}    
+                      className='text-4xl font-normal'>200M$</motion.h1>
                       <div className='border-t mt-5 w-44 border-black opacity-70'>
 
                       </div>
-                      <h4 className='mt-4 tracking-widest'>CAPITAL</h4>
+                      <motion.h4
+                       initial={{opacity: 0, x : 35}}
+                       animate={Starboy3}
+                       ref={ref5}    
+                      className='mt-4 tracking-widest'>CAPITAL</motion.h4>
                    </div>
                 </div>
                 </div>
                 <div className='flex'>
                 <div className='mt-10'>
                    <div className='mt-16'>
-                      <h1 className='text-4xl font-normal'>5</h1>
+                      <motion.h1
+                       initial={{opacity: 0, x : 35}}
+                       animate={Starboy2}
+                       ref={ref5}    
+                      className='text-4xl font-normal'>5</motion.h1>
                       <div className='border-t mt-5 w-44 border-black opacity-70'>
 
                       </div>
-                      <h4 className='mt-4 tracking-widest'>CORE TEAMS</h4>
+                      <motion.h4
+                       initial={{opacity: 0, x : 35}}
+                       animate={Starboy2}
+                       ref={ref5}    
+                      className='mt-4 tracking-widest'>CORE TEAMS</motion.h4>
                    </div>
                    <div className='mt-20'>
-                      <h1 className='text-4xl font-normal'>326</h1>
+                      <motion.h1
+                      initial={{opacity: 0, x : 35}}
+                      animate={Starboy3}
+                      ref={ref5}  
+                      className='text-4xl font-normal'>326</motion.h1>
                       <div className='border-t mt-5 w-44 border-black opacity-70'>
 
                       </div>
-                      <h4 className='mt-4 tracking-widest'>PARTNERS</h4>
+                      <motion.h4
+                      initial={{opacity: 0, x : 35}}
+                      animate={Starboy3}
+                      ref={ref5}  
+                      className='mt-4 tracking-widest'>PARTNERS</motion.h4>
                    </div>
                 </div>
                 </div>
@@ -307,29 +397,57 @@ function Home() {
                 
              </div>
              <div>
-                 <h1 className='mb-10 text-base tracking-widest'>INDUSTRY</h1>
-                 <h2 className='home-line1 mb-10 text-2xl tracking-widest'>Our <br />Partners</h2>
-                 <p className='home-line2 tracking-widest'>Click here to add your own content <br /> and customize the text. This is a great <br /> place to tell a story about your <br /> company and let your users know a <br /> little more about the company's <br /> history, the team's background, or any <br /> other information you'd like to share. <br /> Just click "Edit Text" to get started.</p>
+                 <motion.h1
+                 initial={{opacity: 0, x : -35}}
+                 animate={Reminder1}
+                 ref={ref6}   
+                 className='mb-10 text-base tracking-widest'>INDUSTRY</motion.h1>
+                 <motion.h2
+                  initial={{opacity: 0, x : -35}}
+                  animate={Reminder2}
+                  ref={ref6}    
+                 className='home-line1 mb-10 text-2xl tracking-widest'>Our <br />Partners</motion.h2>
+                 <motion.p
+                  initial={{opacity: 0, x : -35}}
+                  animate={Reminder3}
+                  ref={ref6}    
+                 className='home-line2 tracking-widest'>Click here to add your own content <br /> and customize the text. This is a great <br /> place to tell a story about your <br /> company and let your users know a <br /> little more about the company's <br /> history, the team's background, or any <br /> other information you'd like to share. <br /> Just click "Edit Text" to get started.</motion.p>
              </div>
              </div>
              <div className='flex  flex-col gap-20 justify-center items-center'>
              <div className='flex gap-20 justify-center items-center'>
              <div className="max-w-full flex items-center justify-center flex-col text-center">
-          <img className="max-w-full h-auto" src="https://static.wixstatic.com/media/c837a6_a8508672733a4bb7ba100662952d4f6f~mv2.png/v1/fill/w_175,h_175,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/General_Transport.png" alt="" width={140} />
+          <motion.img
+             initial={{opacity: 0}}
+             animate={Reminder4}
+             ref={ref6}
+          className="max-w-full h-auto" src="https://static.wixstatic.com/media/c837a6_a8508672733a4bb7ba100662952d4f6f~mv2.png/v1/fill/w_175,h_175,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/General_Transport.png" alt="" width={140} />
           <h2 className='tracking-widest text-center text-base'>GENERAL TRANSPORT</h2>
         </div>
              <div className="max-w-full flex items-center justify-center flex-col text-center">
-          <img className="max-w-full mt-7 h-auto" src="https://static.wixstatic.com/media/c837a6_24669e1d20cd4f079fd2ea5e253c99b8~mv2.png/v1/fill/w_110,h_80,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/IDI_Software.png" alt="" width={100} />
+          <motion.img
+           initial={{opacity: 0}}
+           animate={Reminder5}
+           ref={ref6} 
+          className="max-w-full mt-7 h-auto" src="https://static.wixstatic.com/media/c837a6_24669e1d20cd4f079fd2ea5e253c99b8~mv2.png/v1/fill/w_110,h_80,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/IDI_Software.png" alt="" width={100} />
           <h2 className='tracking-widest mt-10 text-center text-base'>IDI SOFTWARE</h2>
         </div>
         </div>
              <div className='flex gap-20 justify-center items-center'>
              <div className="max-w-full flex items-center justify-center flex-col text-center">
-          <img className="max-w-full h-auto" src="https://static.wixstatic.com/media/c837a6_db1c6e9c1b95497f81465ccd218fa048~mv2.png/v1/fill/w_110,h_100,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Imogen_Cars.png" alt="" width={90} />
+          <motion.img
+           initial={{opacity: 0}}
+           animate={Reminder6}
+           ref={ref6} 
+          className="max-w-full h-auto" src="https://static.wixstatic.com/media/c837a6_db1c6e9c1b95497f81465ccd218fa048~mv2.png/v1/fill/w_110,h_100,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Imogen_Cars.png" alt="" width={90} />
           <h2 className='tracking-widest text-center mt-8 text-base'>IMOGEN CARS</h2>
         </div>
              <div className="max-w-full flex items-center justify-center flex-col text-center">
-          <img className="max-w-full h-auto" src="https://static.wixstatic.com/media/c837a6_81bc98e386764170adbb3e97cc7e1655~mv2.png/v1/fill/w_160,h_80,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Tri-Nex%20.png" alt="" width={140} />
+          <motion.img
+           initial={{opacity: 0}}
+           animate={Reminder7}
+           ref={ref6} 
+          className="max-w-full h-auto" src="https://static.wixstatic.com/media/c837a6_81bc98e386764170adbb3e97cc7e1655~mv2.png/v1/fill/w_160,h_80,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Tri-Nex%20.png" alt="" width={140} />
           <h2 className='tracking-widest mt-26 mt-10 text-center text-base'>TRI-NEX</h2>
         </div>
         </div>
