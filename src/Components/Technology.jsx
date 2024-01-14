@@ -130,12 +130,12 @@ function Technology() {
          </div>
         <div>
             <motion.h1
-              initial={{opacity: 0, x : -35}}
+              initial={{opacity: 0, x : 35}}
               animate={Poplar6}
               ref={ref1}  
             className=' text-lg tracking-widest'>REAL-TIME INFORMATION</motion.h1>
              <motion.p
-              initial={{opacity: 0, x : -35}}
+              initial={{opacity: 0, x : 35}}
               animate={Poplar7}
               ref={ref1}   
              className=' home-line1 mt-6 tracking-widest'>I'm a paragraph. Click here to add your <br />own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</motion.p>
