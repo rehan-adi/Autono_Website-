@@ -21,7 +21,7 @@ function Navbar() {
                      <span className='group-hover:underline cursor-pointer underline-offset-[6px] group-hover:mt-1'>Careers</span>
                    </li>
                    </Link>
-                   <li className='bg-black px-6 py-1 text-white rounded-lg'>Subscribe</li>
+                   <li className='bg-black px-6 py-1 hover:bg-white hover:text-black duration-500 text-white rounded-lg'>Subscribe</li>
                 </ul>
          </div>
   )
