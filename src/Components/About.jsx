@@ -25,11 +25,7 @@ function About() {
   return (
     <div className='h-[370vh] w-auto'>
          <div className='h-[90vh] flex-col flex border-b border-black justify-center items-center w-auto bg-white'>
-                <motion.h1
-                 initial={{opacity: 0, x : -35}}
-                 animate={controls1}
-                 ref={ref}   
-                className='text-7xl pt-20 tracking-widest  text-center home-line font-normal'>OUR JOURNEY</motion.h1>
+                <h1 className='text-7xl pt-20 tracking-widest  text-center home-line font-normal'>OUR JOURNEY</h1>
                 <p className='text-2xl text-center home-line1 tracking-wider mt-14'>I'm a paragraph. Click here to add your own text and <br /> edit me. It’s easy. Just click “Edit Text” or double click <br /> me to add your own content and make changes to the <br /> font. I’m a great place for you to tell a story and let <br /> your users know a little more about you.</p>
          </div>
            
@@ -40,9 +36,16 @@ function About() {
                 
              </div>
              <div className=''>
-                <h3 className='mb-8 text-base tracking-widest'>OUR MISSION</h3>
-                 <h1
-                 className='mb-14 text-2xl home-line1  tracking-widest'>Redefining the Way <br /> We Move</h1>
+                <mootion.h3
+                 initial={{opacity: 0, x : -35}}
+                 animate={controls1}
+                 ref={ref}   
+                className='mb-8 text-base tracking-widest'>OUR MISSION</mootion.h3>
+                 <motion.h1
+                  initial={{opacity: 0, x : -35}}
+                  animate={controls2}
+                  ref={ref}  
+                 className='mb-14 text-2xl home-line1  tracking-widest'>Redefining the Way <br /> We Move</motion.h1>
                 <p className='home-line2 tracking-widest'>I'm a paragraph. Click here to add your <br /> own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</p>
                 <p className='home-line2 mt-6 tracking-widest'>This is a great space to write a long <br /> text about your  company and your <br /> services. You can use this space to go <br /> into a little more detail about your <br /> company. Talk about your team and <br /> what services you provide. </p>
              </div>
