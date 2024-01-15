@@ -4,6 +4,24 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 function About() {
+
+  const controls1 = useAnimation();
+  const controls2 = useAnimation();
+  const controls3 = useAnimation();
+
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    rootMargin: '50px -50px',
+  });
+
+  useEffect(() => {
+    if (inView) {
+      controls1.start({ x: 0, opacity: 1, transition: { duration: 1, delay: 0.3 } });
+      controls2.start({ x: 0, opacity: 1, transition: { duration: 1.1, delay: 0.6} });
+      controls3.start({ x: 0, scale: 1, opacity: 1, transition: { duration: 1.6, delay: 0.9} });
+    }
+  }, [inView, controls1, controls2, controls3]);
+
   return (
     <div className='h-[370vh] w-auto'>
          <div className='h-[90vh] flex-col flex border-b border-black justify-center items-center w-auto bg-white'>
