@@ -102,13 +102,14 @@ function About() {
                  className=' text-2xl home-line1  tracking-widest'>Autono In The Press</motion.h1>
              </div>
              </div>
-             {/* <div className='flex gap-20'>
-                  <img src="https://static.wixstatic.com/media/c837a6_892d96f924374608aa5b536d2e4baf71~mv2.png/v1/fill/w_170,h_60,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/RCR-01.png"  alt="" />
-                  <img src="https://static.wixstatic.com/media/c837a6_41a30437c5b946cc9c4d48fe300106ed~mv2.png/v1/fill/w_170,h_35,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/TB_Review-01.png" alt="" />
-                  <img src="https://static.wixstatic.com/media/c837a6_7a9b64de0c2d440da160ec83fd4312ad~mv2.png/v1/fill/w_170,h_23,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Finance-01.png"  alt="" />
-                  <img src="https://static.wixstatic.com/media/c837a6_9fe36d379ad5420fb2f7663fe6a1ff26~mv2.png/v1/fill/w_170,h_41,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Palo_Alto_Tribunal-01.png"  alt="" />
-                  <img src="https://static.wixstatic.com/media/c837a6_8842b707371246bf96beebdc0faa4ccb~mv2.png/v1/fill/w_170,h_119,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/London_post-01.png" alt="" />
-             </div> */}
+             <div className='flex mt-3 justify-center items-center w-auto'>
+               <div className='flex justify-center gap-14 items-center'>
+                  <img src="https://hugotech.co/wp-content/uploads/2023/10/Google.svg" width={65} alt="" />
+                  <img src="https://hugotech.co/wp-content/uploads/2023/10/Meta.svg" width={70} alt="" />
+                  <img src="https://hugotech.co/wp-content/uploads/2023/10/Upwork.svg" width={70} alt="" />
+                  <img src="https://hugotech.co/wp-content/uploads/2023/11/Asset-62.svg" width={100} alt="" />
+               </div>
+    </div> 
         </div>
 
     </div>
