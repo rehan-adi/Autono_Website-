@@ -25,7 +25,11 @@ function About() {
   return (
     <div className='h-[370vh] w-auto'>
          <div className='h-[90vh] flex-col flex border-b border-black justify-center items-center w-auto bg-white'>
-                <h1 className='text-7xl pt-20 tracking-widest  text-center home-line font-normal'>OUR JOURNEY</h1>
+                <motion.h1
+                 initial={{opacity: 0, x : -35}}
+                 animate={controls1}
+                 ref={ref}   
+                className='text-7xl pt-20 tracking-widest  text-center home-line font-normal'>OUR JOURNEY</motion.h1>
                 <p className='text-2xl text-center home-line1 tracking-wider mt-14'>I'm a paragraph. Click here to add your own text and <br /> edit me. It’s easy. Just click “Edit Text” or double click <br /> me to add your own content and make changes to the <br /> font. I’m a great place for you to tell a story and let <br /> your users know a little more about you.</p>
          </div>
            
