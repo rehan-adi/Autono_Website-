@@ -24,6 +24,24 @@ function About() {
     }
   }, [inView, controls1, controls2, controls3, controls4]);
 
+
+  const C1 = useAnimation();
+  const C2 = useAnimation();
+
+
+  const [ref1, inView1] = useInView({
+    triggerOnce: true,
+    rootMargin: '50px -50px',
+  });
+
+  useEffect(() => {
+    if (inView1) {
+      C1.start({ x: 0, opacity: 1, transition: { duration: 1, delay: 0.3 } });
+      C2.start({ x: 0, opacity: 1, transition: { duration: 1.1, delay: 0.6} });
+    }
+  }, [inView1, C1, C2]);
+
+
   return (
     <div className='h-[370vh] w-auto'>
          <div className='h-[90vh] flex-col flex border-b border-black justify-center items-center w-auto bg-white'>
@@ -73,9 +91,15 @@ function About() {
                 
              </div>
              <div className=''>
-                <h3 className='mb-8 text-base tracking-widest'>NEWS</h3>
-                 <h1
-                 className=' text-2xl home-line1  tracking-widest'>Autono In The Press</h1>
+                <motion.h3
+                   initial={{opacity: 0, x : -35}}
+                   animate={C1}
+                   ref={ref1}   
+                className='mb-8 text-base tracking-widest'>NEWS</motion.h3>
+                 <motion.h1  initial={{opacity: 0, x : -35}}
+                   animate={C2}
+                   ref={ref1}   
+                 className=' text-2xl home-line1  tracking-widest'>Autono In The Press</motion.h1>
              </div>
              </div>
              {/* <div className='flex gap-20'>
