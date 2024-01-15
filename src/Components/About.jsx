@@ -8,6 +8,7 @@ function About() {
   const controls1 = useAnimation();
   const controls2 = useAnimation();
   const controls3 = useAnimation();
+  const controls4 = useAnimation();
 
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -18,9 +19,10 @@ function About() {
     if (inView) {
       controls1.start({ x: 0, opacity: 1, transition: { duration: 1, delay: 0.3 } });
       controls2.start({ x: 0, opacity: 1, transition: { duration: 1.1, delay: 0.6} });
-      controls3.start({ x: 0, scale: 1, opacity: 1, transition: { duration: 1.6, delay: 0.9} });
+      controls3.start({ x: 0, opacity: 1, transition: { duration: 1.6, delay: 0.9} });
+      controls4.start({ x: 0, opacity: 1, transition: { duration: 1.6, delay: 1.2} });
     }
-  }, [inView, controls1, controls2, controls3]);
+  }, [inView, controls1, controls2, controls3, controls4]);
 
   return (
     <div className='h-[370vh] w-auto'>
@@ -36,18 +38,26 @@ function About() {
                 
              </div>
              <div className=''>
-                <mootion.h3
+                <motion.h3
                  initial={{opacity: 0, x : -35}}
                  animate={controls1}
                  ref={ref}   
-                className='mb-8 text-base tracking-widest'>OUR MISSION</mootion.h3>
+                className='mb-8 text-base tracking-widest'>OUR MISSION</motion.h3>
                  <motion.h1
                   initial={{opacity: 0, x : -35}}
                   animate={controls2}
                   ref={ref}  
                  className='mb-14 text-2xl home-line1  tracking-widest'>Redefining the Way <br /> We Move</motion.h1>
-                <p className='home-line2 tracking-widest'>I'm a paragraph. Click here to add your <br /> own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</p>
-                <p className='home-line2 mt-6 tracking-widest'>This is a great space to write a long <br /> text about your  company and your <br /> services. You can use this space to go <br /> into a little more detail about your <br /> company. Talk about your team and <br /> what services you provide. </p>
+                <motion.p
+                 initial={{opacity: 0, x : -35}}
+                 animate={controls3}
+                 ref={ref}   
+                className='home-line2 tracking-widest'>I'm a paragraph. Click here to add your <br /> own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</motion.p>
+                <motion.p
+                  initial={{opacity: 0, x : -35}}
+                  animate={controls4}
+                  ref={ref}    
+                className='home-line2 mt-6 tracking-widest'>This is a great space to write a long <br /> text about your  company and your <br /> services. You can use this space to go <br /> into a little more detail about your <br /> company. Talk about your team and <br /> what services you provide. </motion.p>
              </div>
              </div>
              <div className="max-w-full ">
