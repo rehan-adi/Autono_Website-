@@ -2,6 +2,11 @@ import React from 'react'
 import  {useEffect} from 'react'
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { FaGoogle } from "react-icons/fa";
+import { SiTesla } from "react-icons/si";
+import { CgBmw } from "react-icons/cg";
+import { SiJaguar } from "react-icons/si";
+import { SiLamborghini } from "react-icons/si";
 
 function About() {
 
@@ -27,6 +32,11 @@ function About() {
 
   const C1 = useAnimation();
   const C2 = useAnimation();
+  const C3 = useAnimation();
+  const C4 = useAnimation();
+  const C5 = useAnimation();
+  const C6 = useAnimation();
+  const C7 = useAnimation();
 
 
   const [ref1, inView1] = useInView({
@@ -38,8 +48,14 @@ function About() {
     if (inView1) {
       C1.start({ x: 0, opacity: 1, transition: { duration: 1, delay: 0.3 } });
       C2.start({ x: 0, opacity: 1, transition: { duration: 1.1, delay: 0.6} });
+
+      C3.start({ opacity: 1, transition: { duration: 1.1, delay: 1} });
+      C4.start({ opacity: 1, transition: { duration: 1.1, delay: 1.4} });
+      C5.start({ opacity: 1, transition: { duration: 1.1, delay: 1.8} });
+      C6.start({ opacity: 1, transition: { duration: 1.1, delay: 2.2} });
+      C7.start({ opacity: 1, transition: { duration: 1.1, delay: 2.6} });
     }
-  }, [inView1, C1, C2]);
+  }, [inView1, C1, C2, C3, C4, C5, C6, C7]);
 
 
   return (
@@ -102,12 +118,33 @@ function About() {
                  className=' text-2xl home-line1  tracking-widest'>Autono In The Press</motion.h1>
              </div>
              </div>
-             <div className='flex mt-3 justify-center items-center w-auto'>
-               <div className='flex justify-center gap-14 items-center'>
-                  <img src="https://hugotech.co/wp-content/uploads/2023/10/Google.svg" width={65} alt="" />
-                  <img src="https://hugotech.co/wp-content/uploads/2023/10/Meta.svg" width={70} alt="" />
-                  <img src="https://hugotech.co/wp-content/uploads/2023/10/Upwork.svg" width={70} alt="" />
-                  <img src="https://hugotech.co/wp-content/uploads/2023/11/Asset-62.svg" width={100} alt="" />
+             <div className='flex justify-center items-center w-auto'>
+               <div className='flex justify-center gap-28 items-center'>
+                  <motion.span
+                    initial={{opacity: 0}}
+                    animate={C3}
+                    ref={ref1}
+                  ><FaGoogle className='text-5xl' /></motion.span>
+                  <motion.span
+                     initial={{opacity: 0}}
+                     animate={C4}
+                     ref={ref1}
+                  ><SiTesla className='text-5xl'  /></motion.span>
+                  <motion.span
+                     initial={{opacity: 0}}
+                     animate={C5}
+                     ref={ref1}
+                  ><CgBmw  className='text-5xl'  /></motion.span>
+                  <motion.span
+                    initial={{opacity: 0}}
+                    animate={C6}
+                    ref={ref1}
+                  ><SiJaguar  className='text-5xl'  /></motion.span>
+                  <motion.span
+                    initial={{opacity: 0}}
+                    animate={C7}
+                    ref={ref1}
+                  ><SiLamborghini className='text-5xl'  /></motion.span>
                </div>
     </div> 
         </div>

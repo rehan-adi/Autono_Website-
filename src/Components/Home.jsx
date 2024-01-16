@@ -156,10 +156,10 @@ function Home() {
       Reminder2.start({ x: 0, opacity: 1, transition: { duration: 1.1, delay: 0.5} });
       Reminder3.start({ x: 0, opacity: 1, transition: { duration: 1.1, delay: 0.9} });
 
-      Reminder4.start({ opacity: 1, transition: { duration: 3.3, delay: 1} });
-      Reminder5.start({ opacity: 1, transition: { duration: 3.3, delay: 1.8} });
-      Reminder6.start({ opacity: 1, transition: { duration: 3.3, delay: 2.6} });
-      Reminder7.start({ opacity: 1, transition: { duration: 3.3, delay: 3.4} });
+      Reminder4.start({ opacity: 1, transition: { duration: 3.1, delay: 1} });
+      Reminder5.start({ opacity: 1, transition: { duration: 3.1, delay: 1.6} });
+      Reminder6.start({ opacity: 1, transition: { duration: 3.1, delay: 2.2} });
+      Reminder7.start({ opacity: 1, transition: { duration: 3.1, delay: 2.8} });
      }
    }, [inView6, Reminder1, Reminder2, Reminder3, Reminder4, Reminder5, Reminder6, Reminder6]);
 
