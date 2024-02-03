@@ -206,9 +206,9 @@ function Home() {
           className="max-w-full h-auto lg:w-[480px]" src="https://static.wixstatic.com/media/c837a6_ea5eeb99f72d42b0a22f459e01bfd33c~mv2.jpg/v1/fill/w_617,h_840,al_l,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_ea5eeb99f72d42b0a22f459e01bfd33c~mv2.jpg" alt="" width={220} />
         </div>
         </div>
-        <div className='flex items-center h-screen justify-between px-36 bg-white text-black'>
+        <div className='flex items-center flex-col lg:flex-row pt-10 lg:pt-0 h-screen justify-between lg:px-36 bg-white text-black'>
           <div className='flex'>
-             <div className='border-l border-black opacity-60 pr-10'>
+             <div className='border-l border-black opacity-60 pr-6 lg:pr-10'>
                 
              </div>
              <div>
@@ -216,44 +216,44 @@ function Home() {
                   initial={{opacity: 0, x : -35}}
                   animate={animation1}
                   ref={ref1} 
-                 className='uppercase mb-10 tracking-widest text-base'>SERVICES</motion.h1>
+                 className='uppercase mb-10 tracking-widest text-sm lg:text-base'>SERVICES</motion.h1>
                  <motion.h2
                   initial={{opacity: 0, x : -35}}
                   animate={animation2}
                   ref={ref1}   
-                 className='home-line1 mb-10 text-2xl tracking-widest'>We Deliver Exceptional <br /> Products and Services <br /> Around the World</motion.h2>
+                 className='home-line1 mb-10 text-lg lg:text-2xl tracking-widest'>We Deliver Exceptional <br /> Products and Services <br /> Around the World</motion.h2>
                  <motion.h1
                   initial={{opacity: 0, x : -35}}
                   animate={animation3}
                   ref={ref1}  
-                 className='text-4xl home-line2'>AUTONOMOUS <br />DRIVING</motion.h1>
+                 className='lg:text-4xl text-2xl home-line2'>AUTONOMOUS <br />DRIVING</motion.h1>
                  <motion.p
                   initial={{opacity: 0, x : -35}}
                   animate={animation4}
                   ref={ref1} 
-                 className='home-line2 mt-6 tracking-widest'>I'm a paragraph. Click here to add your <br /> own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</motion.p>
+                 className='home-line2 mt-6 lg:text-base text-xs tracking-widest'>I'm a paragraph. Click here to add your <br /> own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</motion.p>
              </div>
              </div>
-             <div className="max-w-full text-center">
-          <img className="max-w-full h-auto" src="https://static.wixstatic.com/media/84770f_3cc097e7503b4ed498e350c6618ef956~mv2.jpg/v1/fill/w_950,h_850,al_l,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_3cc097e7503b4ed498e350c6618ef956~mv2.jpg" alt="img" width={700} />
+             <div className="max-w-full flex justify-center items-center text-center">
+          <img className="max-w-full h-auto lg:w-[700px]" src="https://static.wixstatic.com/media/84770f_3cc097e7503b4ed498e350c6618ef956~mv2.jpg/v1/fill/w_950,h_850,al_l,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_3cc097e7503b4ed498e350c6618ef956~mv2.jpg" alt="img" width={250} />
         </div>
         </div>
-        <div className='flex items-center h-screen justify-center bg-white text-black'>
-          <div className='flex'>
+        <div className='flex lg:items-center flex-col pt-10 lg:pt-0 lg:flex-row h-screen justify-between lg:px-36 bg-white text-black'>
+          <div className='flex justify-center flex-col lg:flex-row items-center'>
           <div className="max-w-full">
-          <img className="max-w-full h-auto" src="https://static.wixstatic.com/media/84770f_abca8ce0bac24971a57d1f9d40b8238b~mv2.jpg/v1/fill/w_950,h_850,al_r,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_abca8ce0bac24971a57d1f9d40b8238b~mv2.jpg" alt="img" width={700} />
+          <img className="max-w-full lg:w-[700px] h-auto" src="https://static.wixstatic.com/media/84770f_abca8ce0bac24971a57d1f9d40b8238b~mv2.jpg/v1/fill/w_950,h_850,al_r,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_abca8ce0bac24971a57d1f9d40b8238b~mv2.jpg" alt="img" width={250} />
         </div>
-             <div className='pt-32 ml-44'>
+             <div className='lg:pt-32 px-10 lg:px-0 lg:ml-44'>
                  <motion.h1
                   initial={{opacity: 0, x : 75}}
                   animate={framer1}
                   ref={ref2}  
-                 className='text-4xl home-line2'>REAL-TIME <br /> INFORMATION</motion.h1>
+                 className='lg:text-4xl text-2xl home-line2'>REAL-TIME <br /> INFORMATION</motion.h1>
                  <motion.p
                   initial={{opacity: 0, x : 75}}
                   animate={framer2}
                   ref={ref2}   
-                 className='home-line2 mt-6 tracking-widest'>I'm a paragraph. Click here to add your <br /> own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</motion.p>
+                 className='home-line2 lg:text-sm text-xs mt-6 tracking-widest'>I'm a paragraph. Click here to add your <br /> own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</motion.p>
                  <motion.button
                   initial={{opacity: 0, x : 75}}
                   animate={framer3}
