@@ -168,16 +168,16 @@ function Home() {
 
 
   return (
-    <main className='h-[810vh] w-auto bg-black'> 
+    <main className='max-h-fit w-auto bg-black'> 
     <div className='home-img flex justify-center items-start pt-36 w-auto h-[110vh]'>
     <div className='flex flex-col justify-center items-center'>
-             <h1 className='lg:text-7xl text-3xl tracking-widest text-center home-line font-normal'>THE FUTURE OF <br />MOBILITY IS HERE</h1>
+             <h1 className='lg:text-7xl text-3xl tracking-widest text-center lg:home-line font-normal'>THE FUTURE OF <br />MOBILITY IS HERE</h1>
              <p className='lg:text-xl text-base text-center mt-10 tracking-widest lg:mt-3'>Discover the safest self-driving experience with Autono.</p>
          </div>
     </div> 
-        <div className='flex items-center justify-between px-36 text-white'>
+        <div className='flex items-center flex-col lg:flex-row justify-between lg:pt-0 pt-16 lg:px-36 text-white'>
           <div className='flex '>
-             <div className='border-l border-white opacity-60 pr-10'>
+             <div className='border-l border-white opacity-60 pr-6 lg:pr-10'>
                 
              </div>
              <div>
@@ -185,25 +185,25 @@ function Home() {
                   initial={{opacity: 0, x : -35}}
                   animate={controls1}
                   ref={ref} 
-                 className='mb-10 text-base tracking-widest'>VISION</motion.h1>
+                 className='mb-10 lg:text-base text-sm tracking-widest'>VISION</motion.h1>
                  <motion.h2
                   initial={{opacity: 0, x : -35}}
                   animate={controls2}
                   ref={ref}  
-                 className='home-line1 mb-10 text-2xl tracking-widest'>We’re Changing the <br /> Way the World Thinks <br /> About Cars</motion.h2>
+                 className='home-line1 mb-10 lg:text-2xl text-lg tracking-widest'>We’re Changing the <br /> Way the World Thinks <br /> About Cars</motion.h2>
                  <motion.p
                   initial={{opacity: 0, x : -35}}
                   animate={controls3}
                   ref={ref}  
-                 className='home-line2 tracking-widest'>I'm a paragraph. Click here to add your <br /> own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</motion.p>
+                 className='home-line2 text-xs lg:text-base tracking-widest'>I'm a paragraph. Click here to add your <br /> own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</motion.p>
              </div>
              </div>
-             <div className="max-w-full  text-center">
+             <div className="max-w-full flex justify-center items-center text-center">
           <motion.img
            initial={{opacity: 0, x : 155}}
            animate={controls4}
            ref={ref}   
-          className="max-w-full h-auto" src="https://static.wixstatic.com/media/c837a6_ea5eeb99f72d42b0a22f459e01bfd33c~mv2.jpg/v1/fill/w_617,h_840,al_l,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_ea5eeb99f72d42b0a22f459e01bfd33c~mv2.jpg" alt="" width={480} />
+          className="max-w-full h-auto lg:w-[480px]" src="https://static.wixstatic.com/media/c837a6_ea5eeb99f72d42b0a22f459e01bfd33c~mv2.jpg/v1/fill/w_617,h_840,al_l,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_ea5eeb99f72d42b0a22f459e01bfd33c~mv2.jpg" alt="" width={220} />
         </div>
         </div>
         <div className='flex items-center h-screen justify-between px-36 bg-white text-black'>
