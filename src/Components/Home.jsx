@@ -170,9 +170,9 @@ function Home() {
   return (
     <main className='h-[810vh] w-auto bg-black'> 
     <div className='home-img flex justify-center items-start pt-36 w-auto h-[110vh]'>
-         <div className='flex flex-col justify-center items-center'>
-             <h1 className='text-7xl tracking-widest text-center home-line font-normal'>THE FUTURE OF <br />MOBILITY IS HERE</h1>
-             <p className='text-xl tracking-widest mt-3'>Discover the safest self-driving experience with Autono.</p>
+    <div className='flex flex-col justify-center items-center'>
+             <h1 className='lg:text-7xl text-3xl tracking-widest text-center home-line font-normal'>THE FUTURE OF <br />MOBILITY IS HERE</h1>
+             <p className='lg:text-xl text-base text-center mt-10 tracking-widest lg:mt-3'>Discover the safest self-driving experience with Autono.</p>
          </div>
     </div> 
         <div className='flex items-center justify-between px-36 text-white'>
