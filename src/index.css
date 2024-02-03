@@ -15,12 +15,21 @@
     background-size: cover;
     background-position: center;
 }
-.home-line{
-    line-height: 1.5;
+
+@media (min-width: 1024px) {
+    .home-line {
+        font-size: 4.1rem;
+        line-height: 1.5;
+    }
 }
-.home-line1{
-    line-height: 1.7;
+
+@media (max-width: 767px) {
+    .home-line {
+        font-size: 1.875rem;
+        line-height: 1.7;
+    }
 }
+
 .home-line2{
     line-height: 1.6;
 }
