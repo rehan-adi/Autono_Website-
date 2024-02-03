@@ -238,12 +238,12 @@ function Home() {
           <img className="max-w-full h-auto lg:w-[700px]" src="https://static.wixstatic.com/media/84770f_3cc097e7503b4ed498e350c6618ef956~mv2.jpg/v1/fill/w_950,h_850,al_l,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_3cc097e7503b4ed498e350c6618ef956~mv2.jpg" alt="img" width={250} />
         </div>
         </div>
-        <div className='flex lg:items-center flex-col pt-10 lg:pt-0 lg:flex-row h-screen justify-between lg:px-36 bg-white text-black'>
+        <div className='flex lg:items-center mb-40 lg:mb-0 flex-col pt-10 lg:pt-0 lg:flex-row h-screen justify-between lg:px-36 bg-white text-black'>
           <div className='flex justify-center flex-col lg:flex-row items-center'>
           <div className="max-w-full pl-1 lg:pl-0">
           <img className="max-w-full lg:w-[700px] h-auto" src="https://static.wixstatic.com/media/84770f_abca8ce0bac24971a57d1f9d40b8238b~mv2.jpg/v1/fill/w_950,h_850,al_r,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_abca8ce0bac24971a57d1f9d40b8238b~mv2.jpg" alt="img" width={250} />
         </div>
-             <div className='lg:pt-32 px-10 lg:px-0 lg:ml-44'>
+             <div className='lg:pt-10 mx-10 lg:mx-0 lg:ml-44'>
                  <motion.h1
                   initial={{opacity: 0, x : 75}}
                   animate={framer1}
@@ -262,26 +262,26 @@ function Home() {
              </div>
              </div>
         </div>
-        <div className='flex items-center h-screen pb-[85px] justify-center bg-white text-black'>
-          <div className='flex'>
-          <div className='pt-32 mr-44'>
+        <div className='flex items-center flex-col lg:flex-row h-screen pb-[85px] justify-center bg-white text-black'>
+          <div className='flex justify-center lg:pb-0 pb-60 bg-white pt-10 items-center flex-col lg:flex-row'>
+          <div className='pt-0 lg:pb-0 pb-10 lg:pt-0 bg-white mx-10 lg:mx-0  lg:mr-36'>
                  <motion.h1
                   initial={{opacity: 0, x : -35}}
                   animate={chaleya1}
                   ref={ref3}  
-                 className='text-4xl home-line2'>PERCEPTION <br /> ENABLED</motion.h1>
+                 className=' text-2xl lg:text-4xl home-line2'>PERCEPTION <br /> ENABLED</motion.h1>
                  <motion.p
                   initial={{opacity: 0, x : -35}}
                   animate={chaleya2}
                   ref={ref3}   
-                 className='home-line2 mt-6 tracking-widest'>I'm a paragraph. Click here to add your <br /> own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</motion.p>
+                 className='home-line2 mt-6 text-xs lg:text-base tracking-widest'>I'm a paragraph. Click here to add your <br /> own text and edit me. It’s easy. <br /> Just click “Edit Text” or double click <br /> me to add your own content and make <br /> changes to the font. I’m a great place  for <br /> you  to tell a story and let  your users <br /> know a little more about you.</motion.p>
                  <motion.button
                   initial={{opacity: 0, x : -35}}
                   animate={chaleya3}
                   ref={ref3}   
                  className='bg-transparent border hover:bg-black hover:text-white duration-500 px-6 py-1 mt-7 text-black border-r border-black rounded-lg'>Read More <span><MdArrowForward className='inline-block text-lg' /></span></motion.button>
              </div>
-          <div className="max-w-full">
+          <div className="max-w-full mr-8 lg:mr-0">
           <img className="max-w-full h-auto" src="https://static.wixstatic.com/media/c837a6_305ff8a7722a479ab58f1d4f2729586e~mv2.jpg/v1/fill/w_950,h_850,al_l,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_305ff8a7722a479ab58f1d4f2729586e~mv2.jpg" alt="img" width={700} />
         </div>
              </div>
