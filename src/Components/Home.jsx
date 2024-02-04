@@ -391,9 +391,9 @@ function Home() {
                 </div>
                 </div>
         </div>
-        <div className='flex items-center justify-between h-[90vh] w-auto px-36 bg-black text-white'>
+        <div className='flex items-center flex-col lg:flex-row justify-between h-[130vh] lg:h-[90vh] w-auto mt-16 pb-14 lg:pb-0 lg:mt-0 lg:px-36 bg-black text-white'>
           <div className='flex '>
-             <div className='border-l border-white opacity-60 pr-10'>
+             <div className='border-l border-white opacity-60 pr-6 lg:pr-10'>
                 
              </div>
              <div>
@@ -401,36 +401,36 @@ function Home() {
                  initial={{opacity: 0, x : -35}}
                  animate={Reminder1}
                  ref={ref6}   
-                 className='mb-10 text-base tracking-widest'>INDUSTRY</motion.h1>
+                 className='mb-10 lg:text-base text-sm tracking-widest'>INDUSTRY</motion.h1>
                  <motion.h2
                   initial={{opacity: 0, x : -35}}
                   animate={Reminder2}
                   ref={ref6}    
-                 className='home-line1 mb-10 text-2xl tracking-widest'>Our <br />Partners</motion.h2>
+                 className='home-line1 mb-10 text-xl lg:text-2xl tracking-widest'>Our <br />Partners</motion.h2>
                  <motion.p
                   initial={{opacity: 0, x : -35}}
                   animate={Reminder3}
                   ref={ref6}    
-                 className='home-line2 tracking-widest'>Click here to add your own content <br /> and customize the text. This is a great <br /> place to tell a story about your <br /> company and let your users know a <br /> little more about the company's <br /> history, the team's background, or any <br /> other information you'd like to share. <br /> Just click "Edit Text" to get started.</motion.p>
+                 className='home-line2 text-xs lg:text-base  tracking-widest'>Click here to add your own content <br /> and customize the text. This is a great <br /> place to tell a story about your <br /> company and let your users know a <br /> little more about the company's <br /> history, the team's background, or any <br /> other information you'd like to share. <br /> Just click "Edit Text" to get started.</motion.p>
              </div>
              </div>
              <div className='flex  flex-col gap-20 justify-center items-center'>
-             <div className='flex gap-20 justify-center items-center'>
+             <div className='flex lg:gap-20 gap-5 justify-center items-center'>
              <div className="max-w-full flex items-center justify-center flex-col text-center">
           <motion.img
              initial={{opacity: 0}}
              animate={Reminder4}
              ref={ref6}
-          className="max-w-full h-auto" src="https://static.wixstatic.com/media/c837a6_a8508672733a4bb7ba100662952d4f6f~mv2.png/v1/fill/w_175,h_175,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/General_Transport.png" alt="" width={140} />
-          <h2 className='tracking-widest text-center text-base'>GENERAL TRANSPORT</h2>
+          className="max-w-full lg:w-[140px] h-auto" src="https://static.wixstatic.com/media/c837a6_a8508672733a4bb7ba100662952d4f6f~mv2.png/v1/fill/w_175,h_175,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/General_Transport.png" alt="" width={90} />
+          <h2 className='tracking-widest lg:mt-0 mt-3 text-center text-xs lg:text-base'>GENERAL TRANSPORT</h2>
         </div>
              <div className="max-w-full flex items-center justify-center flex-col text-center">
           <motion.img
            initial={{opacity: 0}}
            animate={Reminder5}
            ref={ref6} 
-          className="max-w-full mt-7 h-auto" src="https://static.wixstatic.com/media/c837a6_24669e1d20cd4f079fd2ea5e253c99b8~mv2.png/v1/fill/w_110,h_80,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/IDI_Software.png" alt="" width={100} />
-          <h2 className='tracking-widest mt-10 text-center text-base'>IDI SOFTWARE</h2>
+          className="max-w-full lg:w-[100px] mt-7 h-auto" src="https://static.wixstatic.com/media/c837a6_24669e1d20cd4f079fd2ea5e253c99b8~mv2.png/v1/fill/w_110,h_80,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/IDI_Software.png" alt="" width={70} />
+          <h2 className='tracking-widest lg:mt-10 mt-5 text-center text-xs lg:text-base'>IDI SOFTWARE</h2>
         </div>
         </div>
              <div className='flex gap-20 justify-center items-center'>
@@ -439,16 +439,16 @@ function Home() {
            initial={{opacity: 0}}
            animate={Reminder6}
            ref={ref6} 
-          className="max-w-full h-auto" src="https://static.wixstatic.com/media/c837a6_db1c6e9c1b95497f81465ccd218fa048~mv2.png/v1/fill/w_110,h_100,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Imogen_Cars.png" alt="" width={90} />
-          <h2 className='tracking-widest text-center mt-8 text-base'>IMOGEN CARS</h2>
+          className="max-w-full lg:w-[90px] h-auto" src="https://static.wixstatic.com/media/c837a6_db1c6e9c1b95497f81465ccd218fa048~mv2.png/v1/fill/w_110,h_100,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Imogen_Cars.png" alt="" width={70} />
+          <h2 className='tracking-widest text-center mt-8 text-xs lg:text-base'>IMOGEN CARS</h2>
         </div>
              <div className="max-w-full flex items-center justify-center flex-col text-center">
           <motion.img
            initial={{opacity: 0}}
            animate={Reminder7}
            ref={ref6} 
-          className="max-w-full h-auto" src="https://static.wixstatic.com/media/c837a6_81bc98e386764170adbb3e97cc7e1655~mv2.png/v1/fill/w_160,h_80,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Tri-Nex%20.png" alt="" width={140} />
-          <h2 className='tracking-widest mt-26 mt-10 text-center text-base'>TRI-NEX</h2>
+          className="max-w-full mt-3 lg:mt-0 lg:w-[140px] h-auto" src="https://static.wixstatic.com/media/c837a6_81bc98e386764170adbb3e97cc7e1655~mv2.png/v1/fill/w_160,h_80,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Tri-Nex%20.png" alt="" width={100} />
+          <h2 className='tracking-widest mt-26 mt-9 lg:mt-10 text-center text-xs lg:text-base'>TRI-NEX</h2>
         </div>
         </div>
         </div>
