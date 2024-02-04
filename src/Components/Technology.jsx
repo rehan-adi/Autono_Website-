@@ -55,17 +55,16 @@ function Technology() {
 
   return (
     <div className='h-[420vh] w-auto'>
-          <div className='h-[170vh] flex justify-center items-center relative w-auto '>
-          <h1 className='text-7xl tracking-widest absolute top-32 z-50 text-center home-line font-normal'>PERCEPTION ENABLED <br /> TECHNOLOGY</h1>
-          <img className='absolute top-4' src="https://static.wixstatic.com/media/84770f_7d06620bdcd24de29f5d55fef94e1aab~mv2.jpg/v1/fill/w_1899,h_1325,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/84770f_7d06620bdcd24de29f5d55fef94e1aab~mv2.jpg" alt=""  />
-          <p className='text-2xl home-line1 text-center absolute bottom-20 tracking-widest'>Click here to edit this paragraph and add your own <br /> content. This is a great place to expand on the title and <br /> any relevant details or information.</p>
+          <div className='lg:h-[170vh] h-[100vh] flex justify-center items-center relative w-auto '>
+          <h1 className='lg:text-7xl text-5xl tracking-widest absolute top-32 z-50 text-center home-line font-normal'>PERCEPTION ENABLED <br /> TECHNOLOGY</h1>
+          <img className='absolute top-36 lg:top-4' src="https://static.wixstatic.com/media/84770f_7d06620bdcd24de29f5d55fef94e1aab~mv2.jpg/v1/fill/w_1899,h_1325,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/84770f_7d06620bdcd24de29f5d55fef94e1aab~mv2.jpg" alt=""  />
+          <p className='lg:text-2xl text-sm home-line1 text-center absolute bottom-20 tracking-widest'>Click here to edit this paragraph and add your own <br /> content. This is a great place to expand on the title and <br /> any relevant details or information.</p>
           </div>
 
-
           <div>
-          <div className='flex items-center h-screen bg-black justify-between px-36 text-white'>
-          <div className='flex '>
-             <div className='border-l border-white opacity-60 pr-10'>
+          <div className='flex items-center flex-col pb-20 lg:pb-0 lg:flex-row h-[105vh] lg:h-screen bg-black justify-between lg:px-36 text-white'>
+          <div className='flex pt-16 lg:pt-0 '>
+             <div className='border-l border-white opacity-60 pr-6 lg:pr-10'>
                 
              </div>
              <div className=''>
@@ -73,12 +72,12 @@ function Technology() {
                    initial={{opacity: 0, x : -35}}
                    animate={controls1}
                    ref={ref} 
-                 className='mb-10 text-base tracking-widest'>THE AUTONO CAR</motion.h1>
+                 className='mb-10 lg:text-base text-sm tracking-widest'>THE AUTONO CAR</motion.h1>
                  <motion.p
                    initial={{opacity: 0, x : -35}}
                    animate={controls2}
                    ref={ref}  
-                 className='home-line1 text-2xl tracking-widest'>Using groundbreaking <br /> perception-enabled sensor <br /> technology, the Autono car <br /> is a fully driverless vehicle <br /> engineered to the highest <br /> degree of precision and <br /> safety. It’s autonomous <br /> driving reimagined.</motion.p>
+                 className='home-line1 text-sm lg:text-2xl tracking-widest'>Using groundbreaking <br /> perception-enabled sensor <br /> technology, the Autono car <br /> is a fully driverless vehicle <br /> engineered to the highest <br /> degree of precision and <br /> safety. It’s autonomous <br /> driving reimagined.</motion.p>
              </div>
              </div>
              <div className="max-w-full">
@@ -86,16 +85,16 @@ function Technology() {
           initial={{opacity: 0, scale: 0}}
           animate={controls3}
           ref={ref}   
-          className="max-w-full h-auto" src="https://static.wixstatic.com/media/84770f_b25d65793a3844d693462c8c8bdcdda3~mv2.jpg/v1/fill/w_950,h_1050,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_b25d65793a3844d693462c8c8bdcdda3~mv2.jpg" alt="" width={600} />
+          className="max-w-full lg:w-[600px] h-auto" src="https://static.wixstatic.com/media/84770f_b25d65793a3844d693462c8c8bdcdda3~mv2.jpg/v1/fill/w_950,h_1050,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_b25d65793a3844d693462c8c8bdcdda3~mv2.jpg" alt="" width={250} />
         </div>
         </div>
           </div>
            
 
-           <div className='h-screen px-36 text-black bg-white'>
-          <div className='flex items-center justify-between'>
+           <div className='h-screen pt-10 lg:pt-0 lg:px-36 text-black bg-white'>
+          <div className='flex items-center flex-col lg:flex-row justify-between'>
           <div className='flex '>
-             <div className='border-l border-black opacity-60 pr-10'>
+             <div className='border-l border-black opacity-60 pr-6 lg:pr-10'>
                 
              </div>
              <div className=''>
@@ -103,16 +102,16 @@ function Technology() {
                   initial={{opacity: 0, x : -35}}
                   animate={Poplar1}
                   ref={ref1}  
-                 className='mb-10 text-base tracking-widest'>THE AUTONO DIGITAL PRODUCTS</motion.h1>
+                 className='mb-10 text-sm lg:text-base tracking-widest'>THE AUTONO PRODUCTS</motion.h1>
                  <motion.p
                    initial={{opacity: 0, x : -35}}
                    animate={Poplar2}
                    ref={ref1}   
-                 className='home-line1 text-2xl tracking-widest'>We’ve developed an app <br /> so that each vehicle can <br /> drive autonomously and <br /> make decisions based on <br /> real-time information and <br /> situational awareness.</motion.p>
+                 className='home-line1 text-xs lg:text-2xl tracking-widest'>We’ve developed an app <br /> so that each vehicle can <br /> drive autonomously and <br /> make decisions based on <br /> real-time information and <br /> situational awareness.</motion.p>
              </div>
              </div>
-             <div className="max-w-full">
-          <img className="max-w-full h-auto" src="https://static.wixstatic.com/media/84770f_3776ae9c0c64453597798fcd81529730~mv2.jpg/v1/fill/w_950,h_1050,al_l,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_3776ae9c0c64453597798fcd81529730~mv2.jpg" alt="" width={650} />
+             <div className="max-w-full lg:mr-0 mr-16 ">
+          <img className="max-w-full lg:w-[650px] h-auto" src="https://static.wixstatic.com/media/84770f_3776ae9c0c64453597798fcd81529730~mv2.jpg/v1/fill/w_950,h_1050,al_l,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_3776ae9c0c64453597798fcd81529730~mv2.jpg" alt="" width={250} />
         </div>
         </div>
         <div className='flex gap-72 justify-around'> 
