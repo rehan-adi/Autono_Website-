@@ -7,7 +7,7 @@ import { FaTwitter } from "react-icons/fa";
 
 function Footer() {
   return (
-    <div className='bg-white flex relative border-t border-black justify-center items-center flex-col w-auto h-[80vh]'>
+    <div className='bg-white  lg:flex hidden flex relative border-t border-black justify-center items-center flex-col w-auto h-[80vh]'>
          <div className='mb-20 mr-[930px]'>
               <h1 className='font-bold tracking-wide text-xl'><span className='mr-2'>A</span><span className='mr-2'>U</span><span className='mr-2'>T</span><span className='mr-2'>O</span><span className='mr-2'>N</span>O</h1>
               </div>
@@ -27,7 +27,7 @@ function Footer() {
                     <li className='text-xl tracking-widest'>SUBSCRIBE</li>
                     <li>Sign up to receive Autono news and updates.</li>
                     <li>Email*</li>
-                    <li><input type="text" placeholder='' className='pr-10 pl-3 border-2 border-black py-2 rounded-lg' /></li>
+                    <li><input type="text" placeholder='' className='pr-10 pl-3 outline-none border-2 border-black py-2 rounded-lg' /></li>
                  </ul>
               </div>
           </div>
