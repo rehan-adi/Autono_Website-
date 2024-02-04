@@ -54,7 +54,7 @@ function Technology() {
 
 
   return (
-    <div className='h-[420vh] w-auto'>
+    <div className='lg:h-[420vh] h-[365vh] w-auto'>
           <div className='lg:h-[170vh] h-[100vh] flex justify-center items-center relative w-auto '>
           <h1 className='lg:text-7xl text-5xl tracking-widest absolute top-32 z-50 text-center home-line font-normal'>PERCEPTION ENABLED <br /> TECHNOLOGY</h1>
           <img className='absolute top-36 lg:top-4' src="https://static.wixstatic.com/media/84770f_7d06620bdcd24de29f5d55fef94e1aab~mv2.jpg/v1/fill/w_1899,h_1325,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/84770f_7d06620bdcd24de29f5d55fef94e1aab~mv2.jpg" alt=""  />
@@ -91,7 +91,7 @@ function Technology() {
           </div>
            
 
-           <div className='h-screen pt-10 lg:pt-0 lg:px-36 text-black bg-white'>
+           <div className='lg:h-screen h-[110vh] pt-10 lg:pt-0 lg:px-36 text-black bg-white'>
           <div className='flex items-center flex-col lg:flex-row justify-between'>
           <div className='flex '>
              <div className='border-l border-black opacity-60 pr-6 lg:pr-10'>
@@ -107,25 +107,27 @@ function Technology() {
                    initial={{opacity: 0, x : -35}}
                    animate={Poplar2}
                    ref={ref1}   
-                 className='home-line1 text-xs lg:text-2xl tracking-widest'>We’ve developed an app <br /> so that each vehicle can <br /> drive autonomously and <br /> make decisions based on <br /> real-time information and <br /> situational awareness.</motion.p>
+                 className='home-line1 text-sm lg:text-2xl tracking-widest'>We’ve developed an app <br /> so that each vehicle can <br /> drive autonomously and <br /> make decisions based on <br /> real-time information and <br /> situational awareness.</motion.p>
              </div>
              </div>
              <div className="max-w-full lg:mr-0 mr-16 ">
           <img className="max-w-full lg:w-[650px] h-auto" src="https://static.wixstatic.com/media/84770f_3776ae9c0c64453597798fcd81529730~mv2.jpg/v1/fill/w_950,h_1050,al_l,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_3776ae9c0c64453597798fcd81529730~mv2.jpg" alt="" width={250} />
         </div>
         </div>
-        <div className='flex gap-72 justify-around'> 
+        <div className='flex gap-20 lg:gap-72 flex-col items-center lg:flex-row justify-around'> 
         <div>
             <motion.h1
               initial={{opacity: 0, x : -35}}
               animate={Poplar4}
               ref={ref1}   
             className=' text-lg tracking-widest'>ADVANCED CYBER SECURITY</motion.h1>
+             <div>
              <motion.p
               initial={{opacity: 0, x : -35}}
               animate={Poplar5}
               ref={ref1} 
-             className=' home-line1 mt-6 tracking-widest'>I'm a paragraph. Click here to add your <br />own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</motion.p>
+             className=' home-line1 mt-6 text-sm lg:text-base tracking-widest'>I'm a paragraph. Click here to add your <br />own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</motion.p>
+             </div>
          </div>
         <div>
             <motion.h1
@@ -137,7 +139,7 @@ function Technology() {
               initial={{opacity: 0, x : 35}}
               animate={Poplar7}
               ref={ref1}   
-             className=' home-line1 mt-6 tracking-widest'>I'm a paragraph. Click here to add your <br />own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</motion.p>
+             className=' home-line1 mt-6 text-sm lg:text-base tracking-widest'>I'm a paragraph. Click here to add your <br />own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</motion.p>
          </div>
         </div>
         </div>
