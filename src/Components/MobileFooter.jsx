@@ -26,13 +26,13 @@ function MobileFooter() {
                     </li>
                  </ul>
           </div>
-          <div className='flex justify-center gap-8 mt-10 items-center'>
+          <div className='flex justify-center gap-8 mt-20 items-center'>
                  <h1 className='text-sm'>© 2035 by Autono.<span className='underline'>Wix</span></h1>
                   <div className='flex items-center gap-5'>
-                     <span><FaLinkedinIn  className='text-base text-black'/></span>
-                     <span><FiInstagram  className='text-base text-black'/></span>
-                     <span><FaFacebookF className='text-base text-black' /></span>
-                     <span><FaTwitter  className='text-base text-black'/></span>
+                     <span><FaLinkedinIn  className='text-base cursor-pointer text-black'/></span>
+                     <span><FiInstagram  className='text-base cursor-pointer text-black'/></span>
+                     <span><FaFacebookF className='text-base cursor-pointer text-black' /></span>
+                     <span><FaTwitter  className='text-base cursor-pointer text-black'/></span>
                   </div>
               </div>
           </div>

@@ -7,7 +7,7 @@ import { FaTwitter } from "react-icons/fa";
 
 function Footer() {
   return (
-    <div className='bg-white  lg:flex hidden flex relative border-t border-black justify-center items-center flex-col w-auto h-[80vh]'>
+    <div className='bg-white lg:flex hidden relative border-t border-black justify-center items-center flex-col w-auto h-[80vh]'>
          <div className='mb-20 mr-[930px]'>
               <h1 className='font-bold tracking-wide text-xl'><span className='mr-2'>A</span><span className='mr-2'>U</span><span className='mr-2'>T</span><span className='mr-2'>O</span><span className='mr-2'>N</span>O</h1>
               </div>
@@ -34,10 +34,10 @@ function Footer() {
           <div className='flex gap-[650px] absolute bottom-8'>
                  <h1>© 2035 by Autono. Powered and secured by <span className='underline'>Wix</span></h1>
                   <div className='flex items-center gap-10'>
-                     <span><FaLinkedinIn  className='text-xl text-black'/></span>
-                     <span><FiInstagram  className='text-xl text-black'/></span>
-                     <span><FaFacebookF className='text-xl text-black' /></span>
-                     <span><FaTwitter  className='text-xl text-black'/></span>
+                     <span><FaLinkedinIn  className='text-xl cursor-pointer text-black'/></span>
+                     <span><FiInstagram  className='text-xl cursor-pointer text-black'/></span>
+                     <span><FaFacebookF className='text-xl cursor-pointer text-black' /></span>
+                     <span><FaTwitter  className='text-xl cursor-pointer text-black'/></span>
                   </div>
               </div>
     </div>

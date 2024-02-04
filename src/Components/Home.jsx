@@ -286,7 +286,7 @@ function Home() {
         </div>
              </div>
         </div>
-        <div className='lawra-img w-auto flex lg:justify-start flex-col lg:flex-row justify-center lg:items-center items-center h-[130vh] lg:h-[110vh]'>
+        <div className='lawra-img w-auto flex lg:justify-start flex-col lg:flex-row justify-center lg:items-center items-center h-[115vh] lg:h-[110vh]'>
               <div className='bg-black w-[90vw] lg:w-[32vw] text-white flex mt-20 lg:pt-0 justify-center items-center rounded-xl lg:ml-36 h-[75vh] lg:h-[85vh]'>
               <div className='flex'>
              <div className='border-l border-white opacity-60 pr-6 lg:pr-10'>
@@ -391,7 +391,7 @@ function Home() {
                 </div>
                 </div>
         </div>
-        <div className='flex items-center flex-col lg:flex-row justify-between h-[130vh] lg:h-[90vh] w-auto mt-16 pb-14 lg:pb-0 lg:mt-0 lg:px-36 bg-black text-white'>
+        <div className='flex items-center flex-col lg:flex-row justify-between h-[110vh] lg:h-[90vh] w-auto mt-16 pb-14 lg:pb-0 lg:mt-0 lg:px-36 bg-black text-white'>
           <div className='flex '>
              <div className='border-l border-white opacity-60 pr-6 lg:pr-10'>
                 
