@@ -29,6 +29,19 @@
         line-height: 1.7;
     }
 }
+@media (min-width: 1024px) {
+    .tech-line {
+        font-size: 4.1rem;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 767px) {
+    .tech-line {
+        font-size: 1.875rem;
+        line-height: 1.5;
+    }
+}
 
 .home-line2{
     line-height: 1.6;

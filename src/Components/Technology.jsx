@@ -54,9 +54,9 @@ function Technology() {
 
 
   return (
-    <div className='lg:h-[420vh] h-[365vh] w-auto'>
+    <div className='lg:h-[420vh] h-[360vh] w-auto'>
           <div className='lg:h-[170vh] h-[100vh] flex justify-center items-center relative w-auto '>
-          <h1 className='lg:text-7xl text-5xl tracking-widest absolute top-32 z-50 text-center home-line font-normal'>PERCEPTION ENABLED <br /> TECHNOLOGY</h1>
+          <h1 className='text-5xl tracking-widest absolute top-32 z-50 text-center tech-line font-normal'>PERCEPTION ENABLED <br /> TECHNOLOGY</h1>
           <img className='absolute top-36 lg:top-4' src="https://static.wixstatic.com/media/84770f_7d06620bdcd24de29f5d55fef94e1aab~mv2.jpg/v1/fill/w_1899,h_1325,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/84770f_7d06620bdcd24de29f5d55fef94e1aab~mv2.jpg" alt=""  />
           <p className='lg:text-2xl text-sm home-line1 text-center absolute bottom-20 tracking-widest'>Click here to edit this paragraph and add your own <br /> content. This is a great place to expand on the title and <br /> any relevant details or information.</p>
           </div>
@@ -111,7 +111,7 @@ function Technology() {
              </div>
              </div>
              <div className="max-w-full lg:mr-0 mr-16 ">
-          <img className="max-w-full lg:w-[650px] h-auto" src="https://static.wixstatic.com/media/84770f_3776ae9c0c64453597798fcd81529730~mv2.jpg/v1/fill/w_950,h_1050,al_l,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_3776ae9c0c64453597798fcd81529730~mv2.jpg" alt="" width={250} />
+          <img className="max-w-full lg:w-[650px] h-auto" src="https://static.wixstatic.com/media/84770f_3776ae9c0c64453597798fcd81529730~mv2.jpg/v1/fill/w_950,h_1050,al_l,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_3776ae9c0c64453597798fcd81529730~mv2.jpg" alt="" width={290} />
         </div>
         </div>
         <div className='flex gap-20 lg:gap-72 flex-col items-center lg:flex-row justify-around'> 
