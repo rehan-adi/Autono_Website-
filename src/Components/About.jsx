@@ -66,9 +66,7 @@ function About() {
                <p className=' text-sm  lg:text-2xl text-center home-line1 tracking-wider mt-14'>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
                </div>
          </div>
-           
-
-         <divvv className='flex h-[170vh] pb-28 lg:pb-0 pt-20 lg:pt-0 lg:h-[90vh] border-b border-black w-auto lg:px-36 flex-col lg:flex-row gap-16 lg:gap-0 items-center justify-between'>
+         <div className='flex h-[170vh] pb-28 lg:pb-0 pt-20 lg:pt-0 lg:h-[90vh] border-b border-black w-auto lg:px-36 flex-col lg:flex-row gap-16 lg:gap-0 items-center justify-between'>
           <div className='flex '>
              <div className='border-l border-black opacity-60 pr-6 lg:pr-10'>
                 
@@ -99,13 +97,13 @@ function About() {
              <div className="max-w-full ">
           <img className="max-w-full lg:w-[380px] mr-4 lg:mr-0 rounded-lg  h-auto" src="https://static.wixstatic.com/media/c837a6_6805a01e59934a1584ecebb1a8ecd14c~mv2.jpg/v1/crop/x_3725,y_1163,w_2973,h_4576/fill/w_500,h_770,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/GettyImages-932691626.jpg" alt="" width={240} />
         </div>
-        </divvv>
+        </div>
         <div className='lawra1-img  h-[90vh] w-auto'>
 
         </div>
-        <div className='bg-black text-white flex flex-col gap-44 justify-center items-start px-36 w-auto h-[100vh]'>
+        <div className='bg-black text-white pl-10 lg:pl-36 flex flex-col gap-28 lg:gap-44 justify-center items-start lg:px-36 w-auto lg:h-[100vh] h-[65vh]'>
           <div className='flex'>
-             <div className='border-l border-white opacity-60 pr-10'>
+             <div className='border-l border-white opacity-60 pr-6 lg:pr-10'>
                 
              </div>
              <div className=''>
@@ -113,40 +111,40 @@ function About() {
                    initial={{opacity: 0, x : -35}}
                    animate={C1}
                    ref={ref1}   
-                className='mb-8 text-base tracking-widest'>NEWS</motion.h3>
+                className='mb-8 text-sm lg:text-base tracking-widest'>NEWS</motion.h3>
                  <motion.h1  initial={{opacity: 0, x : -35}}
                    animate={C2}
                    ref={ref1}   
-                 className=' text-2xl home-line1  tracking-widest'>Autono In The Press</motion.h1>
+                 className=' lg:text-2xl home-line1 text-base font-semibold tracking-widest'>Autono In The Press</motion.h1>
              </div>
              </div>
-             <div className='flex justify-center items-center w-auto'>
-               <div className='flex justify-center gap-28 items-center'>
+             <div className='flex justify-center flex-col lg:flex-row items-center w-auto'>
+               <div className='flex justify-center gap-7 lg:gap-28 items-center'>
                   <motion.span
                     initial={{opacity: 0}}
                     animate={C3}
                     ref={ref1}
-                  ><FaGoogle className='text-5xl' /></motion.span>
+                  ><FaGoogle className=' text-2xl lg:text-5xl' /></motion.span>
                   <motion.span
                      initial={{opacity: 0}}
                      animate={C4}
                      ref={ref1}
-                  ><SiTesla className='text-5xl'  /></motion.span>
+                  ><SiTesla className=' text-2xl lg:text-5xl'  /></motion.span>
                   <motion.span
                      initial={{opacity: 0}}
                      animate={C5}
                      ref={ref1}
-                  ><CgBmw  className='text-5xl'  /></motion.span>
+                  ><CgBmw  className=' text-3xl lg:text-5xl'  /></motion.span>
                   <motion.span
                     initial={{opacity: 0}}
                     animate={C6}
                     ref={ref1}
-                  ><SiJaguar  className='text-5xl'  /></motion.span>
+                  ><SiJaguar  className=' text-3xl lg:text-5xl'  /></motion.span>
                   <motion.span
                     initial={{opacity: 0}}
                     animate={C7}
                     ref={ref1}
-                  ><SiLamborghini className='text-5xl'  /></motion.span>
+                  ><SiLamborghini className=' text-2xl lg:text-5xl'  /></motion.span>
                </div>
     </div> 
         </div>
