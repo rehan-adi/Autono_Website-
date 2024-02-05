@@ -190,7 +190,7 @@ function Home() {
                   initial={{opacity: 0, x : -35}}
                   animate={controls2}
                   ref={ref}  
-                 className='home-line1 mb-10 lg:text-2xl text-lg tracking-widest'>We’re Changing the <br /> Way the World Thinks <br /> About Cars</motion.h2>
+                 className='home-line1 mb-10 lg:text-2xl font-semibold text-lg tracking-widest'>We’re Changing the <br /> Way the World Thinks <br /> About Cars</motion.h2>
                  <motion.p
                   initial={{opacity: 0, x : -35}}
                   animate={controls3}
@@ -221,12 +221,12 @@ function Home() {
                   initial={{opacity: 0, x : -35}}
                   animate={animation2}
                   ref={ref1}   
-                 className='home-line1 mb-10 text-lg lg:text-2xl tracking-widest'>We Deliver Exceptional <br /> Products and Services <br /> Around the World</motion.h2>
+                 className='home-line1 mb-10 text-lg lg:text-2xl  tracking-widest'>We Deliver Exceptional <br /> Products and Services <br /> Around the World</motion.h2>
                  <motion.h1
                   initial={{opacity: 0, x : -35}}
                   animate={animation3}
                   ref={ref1}  
-                 className='lg:text-4xl text-2xl home-line2'>AUTONOMOUS <br />DRIVING</motion.h1>
+                 className='lg:text-4xl text-2xl font-semibold home-line2'>AUTONOMOUS <br />DRIVING</motion.h1>
                  <motion.p
                   initial={{opacity: 0, x : -35}}
                   animate={animation4}
@@ -248,7 +248,7 @@ function Home() {
                   initial={{opacity: 0, x : 75}}
                   animate={framer1}
                   ref={ref2}  
-                 className='lg:text-4xl text-2xl home-line2'>REAL-TIME <br /> INFORMATION</motion.h1>
+                 className='lg:text-4xl text-2xl font-semibold home-line2'>REAL-TIME <br /> INFORMATION</motion.h1>
                  <motion.p
                   initial={{opacity: 0, x : 75}}
                   animate={framer2}
@@ -269,7 +269,7 @@ function Home() {
                   initial={{opacity: 0, x : -35}}
                   animate={chaleya1}
                   ref={ref3}  
-                 className=' text-2xl lg:text-4xl home-line2'>PERCEPTION <br /> ENABLED</motion.h1>
+                 className=' text-2xl lg:text-4xl font-semibold home-line2'>PERCEPTION <br /> ENABLED</motion.h1>
                  <motion.p
                   initial={{opacity: 0, x : -35}}
                   animate={chaleya2}
@@ -406,7 +406,7 @@ function Home() {
                   initial={{opacity: 0, x : -35}}
                   animate={Reminder2}
                   ref={ref6}    
-                 className='home-line1 mb-10 text-xl lg:text-2xl tracking-widest'>Our <br />Partners</motion.h2>
+                 className='home-line1 mb-10 text-xl font-semibold lg:text-2xl tracking-widest'>Our <br />Partners</motion.h2>
                  <motion.p
                   initial={{opacity: 0, x : -35}}
                   animate={Reminder3}

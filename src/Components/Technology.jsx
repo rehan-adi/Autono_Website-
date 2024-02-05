@@ -120,7 +120,7 @@ function Technology() {
               initial={{opacity: 0, x : -35}}
               animate={Poplar4}
               ref={ref1}   
-            className=' text-lg tracking-widest'>ADVANCED CYBER SECURITY</motion.h1>
+            className=' text-lg font-semibold tracking-widest'>ADVANCED CYBER SECURITY</motion.h1>
              <div>
              <motion.p
               initial={{opacity: 0, x : -35}}
@@ -134,7 +134,7 @@ function Technology() {
               initial={{opacity: 0, x : 35}}
               animate={Poplar6}
               ref={ref1}  
-            className=' text-lg tracking-widest'>REAL-TIME INFORMATION</motion.h1>
+            className=' text-lg font-semibold tracking-widest'>REAL-TIME INFORMATION</motion.h1>
              <motion.p
               initial={{opacity: 0, x : 35}}
               animate={Poplar7}
