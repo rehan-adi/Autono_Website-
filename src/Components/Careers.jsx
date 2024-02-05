@@ -122,10 +122,10 @@ function Careers() {
                 <h1 className='text-7xl pt-20 tracking-widest  text-center home-line font-normal'>WE MAKE <br /> BIG IDEAS HAPPEN</h1>
                 <p className='text-2xl tracking-widest mt-14'>Join Us for the Ride</p>
          </div>
-         <div className='w-auto h-[90vh] bg-white'>
-         <div className='flex items-center justify-between px-36 text-black'>
+         <div className='w-auto h-[100vh] lg:h-[90vh] bg-white'>
+         <divvv className='flex items-center flex-col pt-20 lg:flex-row justify-between lg:px-36 text-black'>
           <div className='flex '>
-             <div className='border-l border-black opacity-60 pr-10'>
+             <div className='border-l border-black opacity-60 pr-6 lg:pr-10'>
                 
              </div>
              <div>
@@ -133,28 +133,28 @@ function Careers() {
                    initial={{opacity: 0, x : -35}}
                    animate={controls1}
                    ref={ref}  
-                 className='mb-10 text-base tracking-widest'>LOCATION</motion.h1>
+                 className='mb-10 text-sm lg:text-base tracking-widest'>LOCATION</motion.h1>
                  <motion.h2
                    initial={{opacity: 0, x : -35}}
                    animate={controls2}
                    ref={ref}  
-                 className='home-line1 mb-10 text-2xl tracking-widest'>We’re based in San <br /> Francisco’s innovation hub</motion.h2>
+                 className='home-line1 mb-10 text-base lg:text-2xl font-semibold tracking-widest'>We’re based in San <br /> Francisco’s innovation hub</motion.h2>
                  <motion.p
                    initial={{opacity: 0, x : -35}}
                    animate={controls3}
                    ref={ref}   
-                 className='home-line2 tracking-widest'>I'm a paragraph. Click here to add your <br /> own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</motion.p>
+                 className='home-line2 text-xs lg:text-base tracking-widest'>I'm a paragraph. Click here to add your <br /> own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</motion.p>
              </div>
              </div>
              <div className="max-w-full  text-center">
-          <img className="max-w-full h-auto" src="https://static.wixstatic.com/media/84770f_b277d32c4552480eb4068ee023b6402d~mv2.jpg/v1/fill/w_950,h_950,al_l,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_b277d32c4552480eb4068ee023b6402d~mv2.jpg" alt="" width={650} />
+          <img className="max-w-full mr-12 lg:mr-0 lg:w-[650px] h-auto" src="https://static.wixstatic.com/media/84770f_b277d32c4552480eb4068ee023b6402d~mv2.jpg/v1/fill/w_950,h_950,al_l,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_b277d32c4552480eb4068ee023b6402d~mv2.jpg" alt="" width={290} />
         </div>
-        </div>
+        </divvv>
          </div>
          <div className='bg-black w-auto h-[250vh]'>
-         <div className='flex items-center justify-between px-36 text-white'>
-          <div className='flex '>
-             <div className='border-l border-white opacity-60 pr-10'>
+         <div className='flex items-center flex-col lg:flex-row justify-between lg:px-36 text-white'>
+          <div className='flex pt-20 lg:pt-0 '>
+             <div className='border-l border-white opacity-60 pr-6 lg:pr-10'>
                 
              </div>
              <div>
@@ -162,21 +162,21 @@ function Careers() {
                   initial={{opacity: 0, x : -35}}
                   animate={AfterHour1}
                   ref={ref1}   
-                 className='mb-10 text-base tracking-widest'>JOB OPENINGS</motion.h1>
+                 className='mb-10 text-sm lg:text-base tracking-widest'>JOB OPENINGS</motion.h1>
                  <motion.h2
                   initial={{opacity: 0, x : -35}}
                   animate={AfterHour2}
                   ref={ref1}   
-                 className='home-line1 mb-10 text-2xl tracking-widest'>Changing the future of <br />transportation means <br /> thinking differently.</motion.h2>
+                 className='home-line1 mb-10 text-balance font-semibold lg:text-2xl tracking-widest'>Changing the future of <br />transportation means <br /> thinking differently.</motion.h2>
                  <motion.p
                    initial={{opacity: 0, x : -35}}
                    animate={AfterHour3}
                    ref={ref1}  
-                 className='home-line2 tracking-widest'>I'm a paragraph. Click here to add your <br /> own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</motion.p>
+                 className='home-line2 lg:text-base text-xs tracking-widest'>I'm a paragraph. Click here to add your <br /> own text and edit me. It’s easy. Just <br /> click “Edit Text” or double click me to <br /> add your own content and make <br /> changes to the font. I’m a great place <br /> for you to tell a story and let your users <br /> know a little more about you.</motion.p>
              </div>
              </div>
              <div className="max-w-full  text-center">
-          <img className="max-w-full h-auto" src="https://static.wixstatic.com/media/c837a6_dd610e0724af42ebbc47147f9fbbedf1~mv2.jpg/v1/fill/w_950,h_950,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_dd610e0724af42ebbc47147f9fbbedf1~mv2.jpg" alt="" width={700} />
+          <img className="max-w-full lg:w-[700px] h-auto" src="https://static.wixstatic.com/media/c837a6_dd610e0724af42ebbc47147f9fbbedf1~mv2.jpg/v1/fill/w_950,h_950,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_dd610e0724af42ebbc47147f9fbbedf1~mv2.jpg" alt="" width={310} />
         </div>
         </div>
         <div className='flex items-center justify-around'>
